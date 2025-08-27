@@ -1,0 +1,239 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\controllers\\secantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\controllers\\secantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\controllers\\metodoscerradoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\controllers\\metodoscerradoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\controllers\\newtonraphsoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\controllers\\newtonraphsoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16E6B72-BBA4-4D63-8BE9-2D110E51ED86}|DTO\\DTO.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\dto\\datosmetodoabiertodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16E6B72-BBA4-4D63-8BE9-2D110E51ED86}|DTO\\DTO.csproj|solutionrelative:dto\\datosmetodoabiertodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16E6B72-BBA4-4D63-8BE9-2D110E51ED86}|DTO\\DTO.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\dto\\metodosecantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16E6B72-BBA4-4D63-8BE9-2D110E51ED86}|DTO\\DTO.csproj|solutionrelative:dto\\metodosecantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F16E6B72-BBA4-4D63-8BE9-2D110E51ED86}|DTO\\DTO.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\dto\\datosmetodocerradodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16E6B72-BBA4-4D63-8BE9-2D110E51ED86}|DTO\\DTO.csproj|solutionrelative:dto\\datosmetodocerradodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\apirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\apirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 870,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatosMetodoAbiertoDTO.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DatosMetodoAbiertoDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\DatosMetodoAbiertoDTO.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DatosMetodoAbiertoDTO.cs",
+              "RelativeToolTip": "DTO\\DatosMetodoAbiertoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T15:07:26.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MetodoSecanteDTO.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\MetodoSecanteDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\MetodoSecanteDTO.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\MetodoSecanteDTO.cs",
+              "RelativeToolTip": "DTO\\MetodoSecanteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T23:47:54.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MetodosCerradosController.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\MetodosCerradosController.cs",
+              "RelativeDocumentMoniker": "MetodosCerrados\\Controllers\\MetodosCerradosController.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\MetodosCerradosController.cs",
+              "RelativeToolTip": "MetodosCerrados\\Controllers\\MetodosCerradosController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAkwFUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T23:40:27.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAMUBAAAAAAAAAAAswOABAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-08-11T23:43:39.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SecanteController.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\SecanteController.cs",
+              "RelativeDocumentMoniker": "MetodosCerrados\\Controllers\\SecanteController.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\SecanteController.cs",
+              "RelativeToolTip": "MetodosCerrados\\Controllers\\SecanteController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T23:43:46.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewtonRaphsonController.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\NewtonRaphsonController.cs",
+              "RelativeDocumentMoniker": "MetodosCerrados\\Controllers\\NewtonRaphsonController.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\NewtonRaphsonController.cs",
+              "RelativeToolTip": "MetodosCerrados\\Controllers\\NewtonRaphsonController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwF0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T15:03:45.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatosMetodoCerradoDTO.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DatosMetodoCerradoDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\DatosMetodoCerradoDTO.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DatosMetodoCerradoDTO.cs",
+              "RelativeToolTip": "DTO\\DatosMetodoCerradoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T23:41:36.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\appsettings.json",
+              "RelativeDocumentMoniker": "MetodosCerrados\\appsettings.json",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\appsettings.json",
+              "RelativeToolTip": "MetodosCerrados\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-12T14:40:38.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Program.cs",
+              "RelativeDocumentMoniker": "MetodosCerrados\\Program.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Program.cs",
+              "RelativeToolTip": "MetodosCerrados\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T13:14:25.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "MetodosCerrados\\appsettings.Development.json",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\appsettings.Development.json",
+              "RelativeToolTip": "MetodosCerrados\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-12T14:40:40.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApiREST.csproj",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj",
+              "RelativeDocumentMoniker": "MetodosCerrados\\ApiREST.csproj",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj",
+              "RelativeToolTip": "MetodosCerrados\\ApiREST.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-12T14:40:44.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MetodosCerrados\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MetodosCerrados\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-12T13:58:18.141Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

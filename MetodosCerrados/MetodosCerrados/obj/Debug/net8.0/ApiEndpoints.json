@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "CalculoREST.Controllers.MetodosCerradosController",
+    "Method": "calcular",
+    "RelativePath": "MetodosCerrados",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "DTO.DatosMetodoCerradoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST.Controllers.NewtonRaphsonController",
+    "Method": "PostMetodoAbierto",
+    "RelativePath": "NewtonRaphson",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "DTO.DatosMetodoAbiertoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiREST.Controllers.SecanteController",
+    "Method": "PostSecante",
+    "RelativePath": "Secante",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "datos",
+        "Type": "DTO.MetodoSecanteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

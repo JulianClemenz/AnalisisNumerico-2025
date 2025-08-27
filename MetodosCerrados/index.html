@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Métodos de Búsqueda de Raíces</title>
+    <style>
+        :root {
+            --bg: #f5f7fb;
+            --card: #fff;
+            --ink: #0f172a;
+            --muted: #475569;
+            --ring: #2563eb;
+            --ok: #16a34a;
+            --err: #dc2626;
+            --side: #0b1220;
+            --line: #e5e7eb;
+            --zebra: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html, body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter,system-ui,Segoe UI,Arial,sans-serif;
+            color: var(--ink);
+            background: var(--bg);
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            min-height: 100%;
+        }
+        /* Sidebar */
+        .side {
+            background: linear-gradient(180deg,#0b1220,#121a2e);
+            color: #e5edff;
+            padding: 22px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            box-shadow: 2px 0 24px rgba(2,6,23,.25);
+        }
+
+        .brand {
+            font-weight: 800;
+            letter-spacing: .3px;
+            font-size: 20px;
+            margin-bottom: 6px
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 8px
+        }
+
+        .item {
+            padding: 10px 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #e7eeff;
+        }
+
+            .item small {
+                opacity: .65;
+                font-weight: 600
+            }
+
+            .item.active {
+                background: #1b2750;
+                border-color: #33467a
+            }
+
+            .item:hover {
+                background: #141f3f
+            }
+
+        /* Main */
+        .main {
+            padding: 26px;
+            display: grid;
+            gap: 18px
+        }
+
+        h1 {
+            margin: 0 0 2px
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            box-shadow: 0 14px 32px rgba(15,23,42,.08);
+            padding: 18px;
+        }
+
+        form.grid {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(12,1fr)
+        }
+
+        .full {
+            grid-column: 1/-1
+        }
+
+        .col6 {
+            grid-column: span 6
+        }
+
+        .col4 {
+            grid-column: span 4
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 6px
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid var(--line);
+            background: #fbfdff;
+            font-size: 14px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end
+        }
+
+        button {
+            border: 0;
+            border-radius: 10px;
+            padding: 10px 14px;
+            font-weight: 700;
+            cursor: pointer;
+            background: var(--ring);
+            color: #fff;
+        }
+
+            button.secondary {
+                background: #0f172a0d;
+                color: var(--ink)
+            }
+
+        .hdr {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px
+        }
+
+            .hdr h2 {
+                margin: 0
+            }
+
+        .hint {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .result {
+            display: grid;
+            gap: 12px
+        }
+
+        .meta {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .status-ok {
+            color: var(--ok);
+            font-weight: 700
+        }
+
+        .status-err {
+            color: var(--err);
+            font-weight: 700
+        }
+
+        /* Lista vertical “uno abajo del otro” */
+        .result-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: 640px;
+        }
+
+        .result-row {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 8px 12px;
+            box-shadow: 0 4px 12px rgba(2,6,23,.05);
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 8px;
+        }
+
+            .result-row .key {
+                font-weight: 700;
+                color: #334155;
+                font-size: 13px;
+            }
+
+            .result-row .val {
+                color: #0b1324;
+                font-size: 14px;
+                word-break: break-word;
+            }
+
+        iframe.geogebra {
+            width: 100%;
+            height: 560px;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        /* panels */
+        [role="tabpanel"] {
+            display: none
+        }
+
+            [role="tabpanel"].show {
+                display: block
+            }
+
+        @media (max-width:980px) {
+            body {
+                grid-template-columns: 1fr
+            }
+
+            .side {
+                position: sticky;
+                top: 0;
+                z-index: 30
+            }
+
+            .result-row {
+                grid-template-columns: 1fr
+            }
+            /* en mobile, key arriba y valor abajo */
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="side">
+        <div class="brand">Raíces Numéricas</div>
+        <div class="menu" role="tablist" aria-label="Métodos">
+            <div class="item active" data-tab="biseccion">Bisección <small>(Cerrado)</small></div>
+            <div class="item" data-tab="regla">Regla Falsa <small>(Cerrado)</small></div>
+            <div class="item" data-tab="newton">Newton-Raphson</div>
+            <div class="item" data-tab="secante">Secante</div>
+        </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+        <h1>Métodos de Búsqueda de Raíces</h1>
+
+        <!-- BISECCIÓN -->
+        <section id="biseccion" class="card show" role="tabpanel" aria-labelledby="tab-biseccion">
+            <div class="hdr"><h2>Bisección</h2><div class="hint">/MetodosCerrados → <strong>metodo=false</strong></div></div>
+            <form id="formBiseccion" class="grid" autocomplete="off">
+                <div class="full">
+                    <label for="funcionB">Función f(x)</label>
+                    <input id="funcionB" type="text" placeholder="Ej: x^3 - x - 2" required />
+                </div>
+                <div class="col4">
+                    <label for="XiB">Xi</label>
+                    <input id="XiB" type="number" step="any" value="-2" required />
+                </div>
+                <div class="col4">
+                    <label for="XdB">Xd</label>
+                    <input id="XdB" type="number" step="any" value="4" required />
+                </div>
+                <div class="col4">
+                    <label for="tolB">Tolerancia</label>
+                    <input id="tolB" type="number" step="any" value="0.0001" required />
+                </div>
+                <div class="col6">
+                    <label for="itB">Iteraciones</label>
+                    <input id="itB" type="number" min="1" value="50" required />
+                </div>
+                <div class="full actions">
+                    <button type="button" class="secondary" id="demoB">Ejemplo</button>
+                    <button type="submit">Calcular</button>
+                </div>
+            </form>
+            <div id="outB" class="result" style="display:none">
+                <div class="meta" id="metaB"></div>
+                <div id="tblB"></div>
+                <iframe id="ggbB" class="geogebra" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- REGLA FALSA -->
+        <section id="regla" class="card" role="tabpanel" aria-labelledby="tab-regla">
+            <div class="hdr"><h2>Regla Falsa</h2><div class="hint">/MetodosCerrados → <strong>metodo=true</strong></div></div>
+            <form id="formRegla" class="grid" autocomplete="off">
+                <div class="full">
+                    <label for="funcionR">Función f(x)</label>
+                    <input id="funcionR" type="text" placeholder="Ej: x^3 - x - 2" required />
+                </div>
+                <div class="col4">
+                    <label for="XiR">Xi</label>
+                    <input id="XiR" type="number" step="any" value="-2" required />
+                </div>
+                <div class="col4">
+                    <label for="XdR">Xd</label>
+                    <input id="XdR" type="number" step="any" value="4" required />
+                </div>
+                <div class="col4">
+                    <label for="tolR">Tolerancia</label>
+                    <input id="tolR" type="number" step="any" value="0.0001" required />
+                </div>
+                <div class="col6">
+                    <label for="itR">Iteraciones</label>
+                    <input id="itR" type="number" min="1" value="50" required />
+                </div>
+                <div class="full actions">
+                    <button type="button" class="secondary" id="demoR">Ejemplo</button>
+                    <button type="submit">Calcular</button>
+                </div>
+            </form>
+            <div id="outR" class="result" style="display:none">
+                <div class="meta" id="metaR"></div>
+                <div id="tblR"></div>
+                <iframe id="ggbR" class="geogebra" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- NEWTON-RAPHSON -->
+        <section id="newton" class="card" role="tabpanel" aria-labelledby="tab-newton">
+            <div class="hdr"><h2>Newton-Raphson</h2><div class="hint">/NewtonRaphson</div></div>
+            <form id="formNewton" class="grid" autocomplete="off">
+                <div class="full">
+                    <label for="funcionN">Función f(x)</label>
+                    <input id="funcionN" type="text" placeholder="Ej: cos(x) - x" required />
+                </div>
+                <div class="col6">
+                    <label for="Xini">X inicial (X0)</label>
+                    <input id="Xini" type="number" step="any" value="0.5" required />
+                </div>
+                <div class="col3">
+                    <label for="itN">Iteraciones</label>
+                    <input id="itN" type="number" min="1" value="50" required />
+                </div>
+                <div class="col3">
+                    <label for="tolN">Tolerancia</label>
+                    <input id="tolN" type="number" step="any" value="0.0001" required />
+                </div>
+                <div class="full actions">
+                    <button type="button" class="secondary" id="demoN">Ejemplo</button>
+                    <button type="submit">Calcular</button>
+                </div>
+            </form>
+            <div id="outN" class="result" style="display:none">
+                <div class="meta" id="metaN"></div>
+                <div id="tblN"></div>
+                <iframe id="ggbN" class="geogebra" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- SECANTE -->
+        <section id="secante" class="card" role="tabpanel" aria-labelledby="tab-secante">
+            <div class="hdr"><h2>Secante</h2><div class="hint">/Secante</div></div>
+            <form id="formSecante" class="grid" autocomplete="off">
+                <div class="full">
+                    <label for="funcionS">Función f(x)</label>
+                    <input id="funcionS" type="text" placeholder="Ej: x^3 - x - 1" required />
+                </div>
+                <div class="col4">
+                    <label for="Xini1">X1</label>
+                    <input id="Xini1" type="number" step="any" value="0" required />
+                </div>
+                <div class="col4">
+                    <label for="Xini2">X2</label>
+                    <input id="Xini2" type="number" step="any" value="1" required />
+                </div>
+                <div class="col4">
+                    <label for="tolS">Tolerancia</label>
+                    <input id="tolS" type="number" step="any" value="0.0001" required />
+                </div>
+                <div class="col6">
+                    <label for="itS">Iteraciones</label>
+                    <input id="itS" type="number" min="1" value="50" required />
+                </div>
+                <div class="full actions">
+                    <button type="button" class="secondary" id="demoS">Ejemplo</button>
+                    <button type="submit">Calcular</button>
+                </div>
+            </form>
+            <div id="outS" class="result" style="display:none">
+                <div class="meta" id="metaS"></div>
+                <div id="tblS"></div>
+                <iframe id="ggbS" class="geogebra" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // ---- Configurá tu backend acá:
+        const BASE = "https://localhost:7070"; // <--- cambialo si es necesario
+
+        // ---------- menú lateral ----------
+        const panels = document.querySelectorAll("[role='tabpanel']");
+        document.querySelectorAll(".item").forEach(it => {
+            it.addEventListener("click", () => {
+                document.querySelectorAll(".item").forEach(i => i.classList.remove("active"));
+                it.classList.add("active");
+                const tab = it.dataset.tab;
+                panels.forEach(p => p.classList.toggle("show", p.id === tab));
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+
+        // ---------- utils ----------
+        const PATHS = { cerrados: "/MetodosCerrados", newton: "/NewtonRaphson", secante: "/Secante" };
+        const TIMEOUT = 15000;
+        const $ = s => document.querySelector(s);
+        function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])) }
+        async function fetchJSON(url, options = {}) {
+            const ctl = new AbortController(); const id = setTimeout(() => ctl.abort(), TIMEOUT);
+            try { const r = await fetch(url, { ...options, signal: ctl.signal }); let b = null; try { b = await r.json() } catch { } return { ok: r.ok, status: r.status, body: b }; }
+            finally { clearTimeout(id); }
+        }
+        const normForGGB = expr => (expr || "").replace(/\*\*/g, "^");
+        const ggbUrl = (cmds) => "https://www.geogebra.org/classic?" + cmds.map(c => "command=" + encodeURIComponent(c)).join("&") + "&lang=es";
+
+        // Render vertical (uno abajo del otro)
+        function renderVertical(obj) {
+            if (!obj || typeof obj !== "object") return "<div class='result-list'><div class='result-row'><span class='key'>resultado</span><span class='val'>Sin datos</span></div></div>";
+            const rows = Object.entries(obj).map(([k, v]) => {
+                const val = (v === null || v === undefined) ? "<em>null</em>" : escapeHtml(String(v));
+                return `<div class="result-row"><span class="key">${escapeHtml(k)}</span><span class="val">${val}</span></div>`;
+            }).join("");
+            return `<div class="result-list">${rows}</div>`;
+        }
+
+        // ---------- Bisección ----------
+        $("#demoB").addEventListener("click", () => {
+            $("#funcionB").value = "x^3 - x - 2"; $("#XiB").value = -2; $("#XdB").value = 4; $("#tolB").value = 0.0001; $("#itB").value = 50;
+        });
+        $("#formBiseccion").addEventListener("submit", async (ev) => {
+            ev.preventDefault();
+            const datos = {
+                funcion: $("#funcionB").value.trim(), Xi: parseFloat($("#XiB").value), Xd: parseFloat($("#XdB").value),
+                tolerancia: parseFloat($("#tolB").value), iteraciones: parseInt($("#itB").value, 10), metodo: false
+            };
+            $("#outB").style.display = "block"; $("#metaB").textContent = "Enviando…"; $("#tblB").innerHTML = ""; $("#ggbB").src = "about:blank";
+            const res = await fetchJSON(BASE + PATHS.cerrados, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(datos) });
+            $("#metaB").innerHTML = res.ok ? `<span class="status-ok">✔ OK</span> — ${res.status}` : `<span class="status-err">✖ Error</span> — ${res.status} — ${escapeHtml(res.body?.mensaje || "")}`;
+            $("#tblB").innerHTML = renderVertical(res.body);
+            let xr = (typeof res.body?.xr === "number") ? res.body.xr : null;
+            if (xr === null && typeof res.body?.mensaje === "string") { const m = res.body.mensaje.match(/Xr?\s*([= ]\s*)?(-?\d+(?:\.\d+)?)/i); if (m) xr = parseFloat(m[2]); }
+            const cmds = [`f(x) = ${normForGGB(datos.funcion)}`, `A = (${datos.Xi},0)`, `B = (${datos.Xd},0)`];
+            if (Number.isFinite(xr)) cmds.push(`P = (${xr},0)`);
+            $("#ggbB").src = ggbUrl(cmds);
+        });
+
+        // ---------- Regla Falsa ----------
+        $("#demoR").addEventListener("click", () => {
+            $("#funcionR").value = "x^3 - x - 2"; $("#XiR").value = -2; $("#XdR").value = 4; $("#tolR").value = 0.0001; $("#itR").value = 50;
+        });
+        $("#formRegla").addEventListener("submit", async (ev) => {
+            ev.preventDefault();
+            const datos = {
+                funcion: $("#funcionR").value.trim(), Xi: parseFloat($("#XiR").value), Xd: parseFloat($("#XdR").value),
+                tolerancia: parseFloat($("#tolR").value), iteraciones: parseInt($("#itR").value, 10), metodo: true
+            };
+            $("#outR").style.display = "block"; $("#metaR").textContent = "Enviando…"; $("#tblR").innerHTML = ""; $("#ggbR").src = "about:blank";
+            const res = await fetchJSON(BASE + PATHS.cerrados, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(datos) });
+            $("#metaR").innerHTML = res.ok ? `<span class="status-ok">✔ OK</span> — ${res.status}` : `<span class="status-err">✖ Error</span> — ${res.status} — ${escapeHtml(res.body?.mensaje || "")}`;
+            $("#tblR").innerHTML = renderVertical(res.body);
+            let xr = (typeof res.body?.xr === "number") ? res.body.xr : null;
+            if (xr === null && typeof res.body?.mensaje === "string") { const m = res.body.mensaje.match(/Xr?\s*([= ]\s*)?(-?\d+(?:\.\d+)?)/i); if (m) xr = parseFloat(m[2]); }
+            const cmds = [`f(x) = ${normForGGB(datos.funcion)}`, `A = (${datos.Xi},0)`, `B = (${datos.Xd},0)`];
+            if (Number.isFinite(xr)) cmds.push(`P = (${xr},0)`);
+            $("#ggbR").src = ggbUrl(cmds);
+        });
+
+        // ---------- Newton ----------
+        $("#demoN").addEventListener("click", () => {
+            $("#funcionN").value = "cos(x) - x"; $("#Xini").value = 0.5; $("#tolN").value = 0.0001; $("#itN").value = 50;
+        });
+        $("#formNewton").addEventListener("submit", async (ev) => {
+            ev.preventDefault();
+            const datos = {
+                funcion: $("#funcionN").value.trim(), tolerancia: parseFloat($("#tolN").value),
+                iteraciones: parseInt($("#itN").value, 10), Xini: parseFloat($("#Xini").value)
+            };
+            $("#outN").style.display = "block"; $("#metaN").textContent = "Enviando…"; $("#tblN").innerHTML = ""; $("#ggbN").src = "about:blank";
+            const res = await fetchJSON(BASE + PATHS.newton, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(datos) });
+            $("#metaN").innerHTML = res.ok ? `<span class="status-ok">✔ OK</span> — ${res.status}` : `<span class="status-err">✖ Error</span> — ${res.status} — ${escapeHtml(res.body?.mensaje || "")}`;
+            $("#tblN").innerHTML = renderVertical(res.body);
+            const xr = (typeof res.body?.xr === "number") ? res.body.xr : null;
+            const cmds = [`f(x) = ${normForGGB(datos.funcion)}`,
+            `X0 = (${datos.Xini}, f(${datos.Xini}))`,
+                `g(x) = Derivative(f, x)`,
+            `t(x) = g(${datos.Xini})*(x - ${datos.Xini}) + f(${datos.Xini})`];
+            if (Number.isFinite(xr)) cmds.push(`R = (${xr},0)`);
+            $("#ggbN").src = ggbUrl(cmds);
+        });
+
+        // ---------- Secante ----------
+        $("#demoS").addEventListener("click", () => {
+            $("#funcionS").value = "x^3 - x - 1"; $("#Xini1").value = 0; $("#Xini2").value = 1; $("#tolS").value = 0.0001; $("#itS").value = 50;
+        });
+        $("#formSecante").addEventListener("submit", async (ev) => {
+            ev.preventDefault();
+            const datos = {
+                funcion: $("#funcionS").value.trim(), Xini1: parseFloat($("#Xini1").value),
+                Xini2: parseFloat($("#Xini2").value), tolerancia: parseFloat($("#tolS").value), iteraciones: parseInt($("#itS").value, 10)
+            };
+            $("#outS").style.display = "block"; $("#metaS").textContent = "Enviando…"; $("#tblS").innerHTML = ""; $("#ggbS").src = "about:blank";
+            const res = await fetchJSON(BASE + PATHS.secante, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(datos) });
+            $("#metaS").innerHTML = res.ok ? `<span class="status-ok">✔ OK</span> — ${res.status}` : `<span class="status-err">✖ Error</span> — ${res.status} — ${escapeHtml(res.body?.mensaje || "")}`;
+            $("#tblS").innerHTML = renderVertical(res.body);
+            const raiz = (typeof res.body?.raiz === "number") ? res.body.raiz : null;
+            const cmds = [`f(x) = ${normForGGB(datos.funcion)}`,
+            `A = (${datos.Xini1}, f(${datos.Xini1}))`,
+            `B = (${datos.Xini2}, f(${datos.Xini2}))`,
+                `l = Line(A, B)`];
+            if (Number.isFinite(raiz)) cmds.push(`R = (${raiz},0)`);
+            $("#ggbS").src = ggbUrl(cmds);
+        });
+    </script>
+</body>
+</html>

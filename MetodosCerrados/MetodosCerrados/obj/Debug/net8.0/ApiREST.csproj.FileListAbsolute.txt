@@ -1,0 +1,121 @@
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\appsettings.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.staticwebassets.endpoints.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.exe
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.deps.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.runtimeconfig.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.pdb
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Calculus.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\DTO.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Service.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\DTO.pdb
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Service.pdb
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.AssemblyInfoInputs.cache
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.AssemblyInfo.cs
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\scopedcss\bundle\ApiREST.styles.css
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.ApiREST.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.ApiREST.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiREST.props
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiREST.props
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiREST.props
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.Up2Date
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\refint\ApiREST.dll
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.pdb
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.genruntimeconfig.cache
+C:\Users\julia\OneDrive\Escritorio\Act1AnalisisNumerico\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ref\ApiREST.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\appsettings.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.staticwebassets.endpoints.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.exe
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.deps.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.runtimeconfig.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.pdb
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Calculus.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\DTO.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\DTO.pdb
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.AssemblyInfoInputs.cache
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.AssemblyInfo.cs
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.sourcelink.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\scopedcss\bundle\ApiREST.styles.css
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.ApiREST.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.ApiREST.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiREST.props
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiREST.props
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiREST.props
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.Up2Date
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\refint\ApiREST.dll
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.pdb
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.genruntimeconfig.cache
+C:\Users\julia\OneDrive\Escritorio\AnalisisNumerico-2025\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ref\ApiREST.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\appsettings.Development.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\appsettings.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.staticwebassets.endpoints.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.exe
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.deps.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.runtimeconfig.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\ApiREST.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\Calculus.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\DTO.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\bin\Debug\net8.0\DTO.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.AssemblyReference.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.GeneratedMSBuildEditorConfig.editorconfig
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.AssemblyInfoInputs.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.AssemblyInfo.cs
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.CoreCompileInputs.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.MvcApplicationPartsAssemblyInfo.cs
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.MvcApplicationPartsAssemblyInfo.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.sourcelink.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\scopedcss\bundle\ApiREST.styles.css
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.build.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.development.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.ApiREST.Microsoft.AspNetCore.StaticWebAssets.props
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.ApiREST.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiREST.props
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiREST.props
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiREST.props
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.pack.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.csproj.Up2Date
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\refint\ApiREST.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ApiREST.genruntimeconfig.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\MetodosCerrados\obj\Debug\net8.0\ref\ApiREST.dll

@@ -1,0 +1,204 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ApiREST",
+    "version": "1.0"
+  },
+  "paths": {
+    "/MetodosCerrados": {
+      "post": {
+        "tags": [
+          "MetodosCerrados"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosMetodoCerradoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosMetodoCerradoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosMetodoCerradoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/NewtonRaphson": {
+      "post": {
+        "tags": [
+          "NewtonRaphson"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosMetodoAbiertoDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosMetodoAbiertoDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DatosMetodoAbiertoDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/Secante": {
+      "post": {
+        "tags": [
+          "Secante"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MetodoSecanteDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MetodoSecanteDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MetodoSecanteDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DatosMetodoAbiertoDTO": {
+        "required": [
+          "funcion",
+          "iteraciones",
+          "tolerancia",
+          "xini"
+        ],
+        "type": "object",
+        "properties": {
+          "funcion": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tolerancia": {
+            "type": "number",
+            "format": "double"
+          },
+          "iteraciones": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "xini": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DatosMetodoCerradoDTO": {
+        "required": [
+          "funcion",
+          "iteraciones",
+          "metodo",
+          "tolerancia",
+          "xd",
+          "xi"
+        ],
+        "type": "object",
+        "properties": {
+          "funcion": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "xi": {
+            "type": "number",
+            "format": "double"
+          },
+          "xd": {
+            "type": "number",
+            "format": "double"
+          },
+          "iteraciones": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tolerancia": {
+            "type": "number",
+            "format": "double"
+          },
+          "metodo": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MetodoSecanteDTO": {
+        "required": [
+          "funcion",
+          "iteraciones",
+          "tolerancia",
+          "xini1",
+          "xini2"
+        ],
+        "type": "object",
+        "properties": {
+          "funcion": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tolerancia": {
+            "type": "number",
+            "format": "double"
+          },
+          "iteraciones": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "xini1": {
+            "type": "number",
+            "format": "double"
+          },
+          "xini2": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
