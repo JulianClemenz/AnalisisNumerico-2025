@@ -1,0 +1,6 @@
+@SolucionesLinealesAPI_HostAddress = http://localhost:5180
+
+GET {{SolucionesLinealesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

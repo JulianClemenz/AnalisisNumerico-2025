@@ -1,0 +1,6 @@
+@LinealesAPI_HostAddress = http://localhost:5067
+
+GET {{LinealesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
