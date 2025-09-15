@@ -21,7 +21,7 @@ namespace SolucionesLinealesAPI.Controllers
                 {
                     if(coeficienteDiagonal == 0)
                     {
-                        return BadRequest("pivote nulo en fila " + i);
+                        return BadRequest("pivote nulo en fila " + i+1);
                     }
                     matriz[i][j] = matriz[i][j] / coeficienteDiagonal;
                 }

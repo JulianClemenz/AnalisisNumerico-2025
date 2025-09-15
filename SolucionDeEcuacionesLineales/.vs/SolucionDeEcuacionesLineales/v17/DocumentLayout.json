@@ -11,6 +11,14 @@
       "RelativeMoniker": "D:0:0:{672EDAC1-EFC0-41F1-975E-AAF654C15C18}|SolucionesLinealesAPI\\SolucionesLinealesAPI.csproj|solutionrelative:solucioneslinealesapi\\controllers\\gaussseidelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{672EDAC1-EFC0-41F1-975E-AAF654C15C18}|SolucionesLinealesAPI\\SolucionesLinealesAPI.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\soluciondeecuacioneslineales\\solucioneslinealesapi\\controllers\\gaussjordancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{672EDAC1-EFC0-41F1-975E-AAF654C15C18}|SolucionesLinealesAPI\\SolucionesLinealesAPI.csproj|solutionrelative:solucioneslinealesapi\\controllers\\gaussjordancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ACF1CF9-5FF4-4BF6-A66F-B051C836AFC5}|MetodosDTO\\MetodosDTO.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\soluciondeecuacioneslineales\\metodosdto\\gaussseideldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ACF1CF9-5FF4-4BF6-A66F-B051C836AFC5}|MetodosDTO\\MetodosDTO.csproj|solutionrelative:metodosdto\\gaussseideldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C3CD20CB-AB8D-4F82-A931-53C5326F4DB5}|Utils\\Utils.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\soluciondeecuacioneslineales\\utils\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3CD20CB-AB8D-4F82-A931-53C5326F4DB5}|Utils\\Utils.csproj|solutionrelative:utils\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{672EDAC1-EFC0-41F1-975E-AAF654C15C18}|SolucionesLinealesAPI\\SolucionesLinealesAPI.csproj|solutionrelative:solucioneslinealesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1ACF1CF9-5FF4-4BF6-A66F-B051C836AFC5}|MetodosDTO\\MetodosDTO.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\soluciondeecuacioneslineales\\metodosdto\\gaussseideldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1ACF1CF9-5FF4-4BF6-A66F-B051C836AFC5}|MetodosDTO\\MetodosDTO.csproj|solutionrelative:metodosdto\\gaussseideldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1ACF1CF9-5FF4-4BF6-A66F-B051C836AFC5}|MetodosDTO\\MetodosDTO.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\soluciondeecuacioneslineales\\metodosdto\\gaussjordandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1ACF1CF9-5FF4-4BF6-A66F-B051C836AFC5}|MetodosDTO\\MetodosDTO.csproj|solutionrelative:metodosdto\\gaussjordandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{672EDAC1-EFC0-41F1-975E-AAF654C15C18}|SolucionesLinealesAPI\\SolucionesLinealesAPI.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\soluciondeecuacioneslineales\\solucioneslinealesapi\\controllers\\gaussjordancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{672EDAC1-EFC0-41F1-975E-AAF654C15C18}|SolucionesLinealesAPI\\SolucionesLinealesAPI.csproj|solutionrelative:solucioneslinealesapi\\controllers\\gaussjordancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A20D2E39-95F1-46D4-B283-BCDCA73BF9F1}|SolucionDeEcuacionesLineales\\SolucionDeEcuacionesLineales.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\soluciondeecuacioneslineales\\soluciondeecuacioneslineales\\gaussjordan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +42,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 870,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
@@ -58,24 +62,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Util.cs",
-              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\Utils\\Util.cs",
-              "RelativeDocumentMoniker": "Utils\\Util.cs",
-              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\Utils\\Util.cs",
-              "RelativeToolTip": "Utils\\Util.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T17:35:42.935Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -85,14 +72,14 @@
               "RelativeDocumentMoniker": "htmlAlgoritmos.html",
               "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\htmlAlgoritmos.html",
               "RelativeToolTip": "htmlAlgoritmos.html",
-              "ViewState": "AgIAANABAAAAAAAAAAAAAOABAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAMEBAAAAAAAAAAAqwNYBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-09-15T03:16:59.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\SolucionesLinealesAPI\\Program.cs",
               "RelativeDocumentMoniker": "SolucionesLinealesAPI\\Program.cs",
@@ -104,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "GaussSeidelDTO.cs",
               "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\MetodosDTO\\GaussSeidelDTO.cs",
               "RelativeDocumentMoniker": "MetodosDTO\\GaussSeidelDTO.cs",
@@ -112,7 +99,8 @@
               "RelativeToolTip": "MetodosDTO\\GaussSeidelDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T16:46:03.908Z"
+              "WhenOpened": "2025-09-12T16:46:03.908Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -122,14 +110,14 @@
               "RelativeDocumentMoniker": "SolucionesLinealesAPI\\Controllers\\GaussSeidelController.cs",
               "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\SolucionesLinealesAPI\\Controllers\\GaussSeidelController.cs",
               "RelativeToolTip": "SolucionesLinealesAPI\\Controllers\\GaussSeidelController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBUAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T16:44:48.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GaussJordanDTO.cs",
               "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\MetodosDTO\\GaussJordanDTO.cs",
               "RelativeDocumentMoniker": "MetodosDTO\\GaussJordanDTO.cs",
@@ -141,15 +129,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "GaussJordanController.cs",
               "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\SolucionesLinealesAPI\\Controllers\\GaussJordanController.cs",
               "RelativeDocumentMoniker": "SolucionesLinealesAPI\\Controllers\\GaussJordanController.cs",
               "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\SolucionesLinealesAPI\\Controllers\\GaussJordanController.cs",
               "RelativeToolTip": "SolucionesLinealesAPI\\Controllers\\GaussJordanController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAYwEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBcAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T15:07:13.548Z"
+              "WhenOpened": "2025-09-12T15:07:13.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -162,6 +151,18 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T14:54:00.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Util.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\Utils\\Util.cs",
+              "RelativeDocumentMoniker": "Utils\\Util.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\Utils\\Util.cs",
+              "RelativeToolTip": "Utils\\Util.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T17:35:42.935Z"
             }
           ]
         }

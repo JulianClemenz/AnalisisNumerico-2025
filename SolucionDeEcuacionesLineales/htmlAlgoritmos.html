@@ -27,7 +27,7 @@
         body {
             margin: 0;
             color: var(--ink);
-            background: radial-gradient(1200px 600px at 10% -10%,#122342 0%,transparent 60%),radial-gradient(1200px 600px at 110% 10%,#0e1e3b 0%,transparent 60%),linear-gradient(#09101c,#070d17);
+            background: radial-gradient(1200px 600px at 10% -10%,#122342 0%,transparent 60%), radial-gradient(1200px 600px at 110% 10%,#0e1e3b 0%,transparent 60%), linear-gradient(#09101c,#070d17);
             font: 500 15px/1.4 "Inter",system-ui,Segoe UI,Roboto,Arial
         }
 
@@ -332,6 +332,12 @@
                     <h2 class="title">Entrada de datos</h2>
                     <div class="toolbar">
                         <input id="dim" class="inp" type="number" min="2" max="12" value="3" />
+
+                        <!-- ✅ NUEVOS CAMPOS ESTÉTICOS (no usados por JS/backend) -->
+                        <input id="tol" class="inp" type="text" placeholder="Tolerancia" />
+                        <input id="it" class="inp" type="text" placeholder="Iteraciones" />
+                        <!-- ✅ FIN de la única modificación solicitada -->
+
                         <div class="methods" role="tablist" aria-label="Selector de método">
                             <div class="method active" id="mJordan" data-method="jordan" tabindex="0" role="tab" aria-selected="true">
                                 <div class="m-icon">⟲</div>
@@ -446,14 +452,11 @@
                         body: JSON.stringify({ matriz })
                     });
 
-                    // 👇 lee JSON si viene JSON; si no, lee texto (para BadRequest de backend)
+                    // Manejo de respuesta (igual que antes)
                     let data;
                     const ct = res.headers.get("content-type") || "";
-                    if (ct.includes("application/json")) {
-                        data = await res.json();
-                    } else {
-                        data = await res.text();
-                    }
+                    if (ct.includes("application/json")) data = await res.json();
+                    else data = await res.text();
 
                     if (!res.ok) {
                         const msg = (typeof data === "string" && data.trim())
@@ -461,7 +464,6 @@
                             : (data?.message || data?.title || "Error del servidor");
                         throw new Error(msg);
                     }
-
                     renderResult(data);
                 } catch (err) {
                     toastMsg(err.message || "Error");
@@ -482,6 +484,7 @@
                 });
                 meta.textContent = `• ${new Date().toLocaleTimeString()} · ${method === "jordan" ? "Gauss-Jordan" : "Gauss-Seidel"} · ${sol.length} variables`;
             }
+
             const format = n => !isFinite(n) ? String(n) : Number(n).toLocaleString("es-AR", { maximumFractionDigits: 10 });
 
             mJordan.addEventListener("click", () => setMethod("jordan"));
