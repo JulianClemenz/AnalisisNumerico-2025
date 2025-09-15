@@ -14,6 +14,22 @@ namespace SolucionesLinealesAPI.Controllers
         {
             var matriz = dto.Matriz;
 
+            bool esDD = true;
+            for (int i = 0; i < matriz.Length; i++)//metodo para verificar si es D.D
+            {
+                double diag = Math.Abs(matriz[i][i]);
+                double suma = 0;
+                for (int j = 0; j < matriz.Length; j++)
+                    if (j != i) suma += Math.Abs(matriz[i][j]);  
+
+                if (diag <= suma) { esDD = false; break; }       
+            }
+
+            if (!esDD)
+            {
+                return BadRequest("La matriz no es diagonalmente dominante. El método Gauss-Seidel puede no converger.");
+            }
+
             double tolerancia = 0.0001;
             bool esSolucion = false;
             int contador = 0;
@@ -21,7 +37,10 @@ namespace SolucionesLinealesAPI.Controllers
             vectorResultado.Initialize();
             double[] vectorAnterior = new double[matriz.Length];
 
-            while(contador <= 100 && !esSolucion)
+            
+
+
+            while (contador <= 100 && !esSolucion)
             {
                 contador++;
                 if(contador > 1)

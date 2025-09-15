@@ -98,6 +98,16 @@
         "runtime": {
           "bin/placeholder/MetodosDTO.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
+        }
       }
     }
   },
@@ -454,12 +464,18 @@
       "type": "project",
       "path": "../MetodosDTO/MetodosDTO.csproj",
       "msbuildProject": "../MetodosDTO/MetodosDTO.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/Utils.csproj",
+      "msbuildProject": "../Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "MetodosDTO >= 1.0.0",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -496,6 +512,9 @@
           "projectReferences": {
             "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\MetodosDTO\\MetodosDTO.csproj": {
               "projectPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\MetodosDTO\\MetodosDTO.csproj"
+            },
+            "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\SolucionDeEcuacionesLineales\\Utils\\Utils.csproj"
             }
           }
         }

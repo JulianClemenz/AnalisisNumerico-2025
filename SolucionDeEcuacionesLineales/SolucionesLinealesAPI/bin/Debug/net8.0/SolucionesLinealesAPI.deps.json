@@ -9,7 +9,8 @@
       "SolucionesLinealesAPI/1.0.0": {
         "dependencies": {
           "MetodosDTO": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.6.2"
+          "Swashbuckle.AspNetCore": "6.6.2",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "SolucionesLinealesAPI.dll": {}
@@ -69,6 +70,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -121,6 +130,11 @@
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
     },
     "MetodosDTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

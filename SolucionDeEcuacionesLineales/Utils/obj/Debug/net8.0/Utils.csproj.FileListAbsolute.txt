@@ -1,0 +1,11 @@
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\bin\Debug\net8.0\Utils.deps.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\bin\Debug\net8.0\Utils.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\bin\Debug\net8.0\Utils.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\obj\Debug\net8.0\Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\obj\Debug\net8.0\Utils.AssemblyInfoInputs.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\obj\Debug\net8.0\Utils.AssemblyInfo.cs
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\obj\Debug\net8.0\Utils.csproj.CoreCompileInputs.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\obj\Debug\net8.0\Utils.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\obj\Debug\net8.0\refint\Utils.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\obj\Debug\net8.0\Utils.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\Utils\obj\Debug\net8.0\ref\Utils.dll

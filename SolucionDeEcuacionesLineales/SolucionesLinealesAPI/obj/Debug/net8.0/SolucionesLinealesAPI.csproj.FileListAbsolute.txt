@@ -36,3 +36,5 @@ C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDe
 C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\SolucionesLinealesAPI\obj\Debug\net8.0\SolucionesLinealesAPI.pdb
 C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\SolucionesLinealesAPI\obj\Debug\net8.0\SolucionesLinealesAPI.genruntimeconfig.cache
 C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\SolucionesLinealesAPI\obj\Debug\net8.0\ref\SolucionesLinealesAPI.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\SolucionesLinealesAPI\bin\Debug\net8.0\Utils.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\SolucionesLinealesAPI\bin\Debug\net8.0\Utils.pdb

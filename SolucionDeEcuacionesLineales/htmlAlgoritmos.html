@@ -27,8 +27,8 @@
         body {
             margin: 0;
             color: var(--ink);
-            background: radial-gradient(1200px 600px at 10% -10%, #122342 0%, transparent 60%), radial-gradient(1200px 600px at 110% 10%, #0e1e3b 0%, transparent 60%), linear-gradient(#09101c,#070d17);
-            font: 500 15px/1.4 "Inter",system-ui,Segoe UI,Roboto,Arial;
+            background: radial-gradient(1200px 600px at 10% -10%,#122342 0%,transparent 60%),radial-gradient(1200px 600px at 110% 10%,#0e1e3b 0%,transparent 60%),linear-gradient(#09101c,#070d17);
+            font: 500 15px/1.4 "Inter",system-ui,Segoe UI,Roboto,Arial
         }
 
         .wrap {
@@ -175,7 +175,6 @@
                 cursor: not-allowed
             }
 
-        /* Selector de métodos */
         .methods {
             display: grid;
             grid-template-columns: repeat(2,minmax(200px,1fr));
@@ -263,7 +262,7 @@
             }
 
         .side {
-            background: radial-gradient(120% 140% at 0% 0%, #132a54 0%, #0e1e3d 45%, #0c1830 100%);
+            background: radial-gradient(120% 140% at 0% 0%,#132a54 0%,#0e1e3d 45%,#0c1830 100%);
             border: 1px solid var(--stroke);
             border-radius: var(--r);
             box-shadow: var(--shadow);
@@ -446,13 +445,29 @@
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({ matriz })
                     });
-                    const data = await res.json();
-                    if (!res.ok) throw new Error(typeof data === "string" ? data : (data?.title || "Error del servidor"));
+
+                    // 👇 lee JSON si viene JSON; si no, lee texto (para BadRequest de backend)
+                    let data;
+                    const ct = res.headers.get("content-type") || "";
+                    if (ct.includes("application/json")) {
+                        data = await res.json();
+                    } else {
+                        data = await res.text();
+                    }
+
+                    if (!res.ok) {
+                        const msg = (typeof data === "string" && data.trim())
+                            ? data
+                            : (data?.message || data?.title || "Error del servidor");
+                        throw new Error(msg);
+                    }
+
                     renderResult(data);
                 } catch (err) {
                     toastMsg(err.message || "Error");
                 } finally { busy(false); }
             }
+
             function renderResult(payload) {
                 let sol = Array.isArray(payload) ? payload
                     : Array.isArray(payload.solucion) ? payload.solucion
