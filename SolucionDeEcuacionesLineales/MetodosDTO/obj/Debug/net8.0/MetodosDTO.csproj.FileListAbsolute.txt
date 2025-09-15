@@ -1,0 +1,11 @@
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\bin\Debug\net8.0\MetodosDTO.deps.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\bin\Debug\net8.0\MetodosDTO.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\bin\Debug\net8.0\MetodosDTO.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\obj\Debug\net8.0\MetodosDTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\obj\Debug\net8.0\MetodosDTO.AssemblyInfoInputs.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\obj\Debug\net8.0\MetodosDTO.AssemblyInfo.cs
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\obj\Debug\net8.0\MetodosDTO.csproj.CoreCompileInputs.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\obj\Debug\net8.0\MetodosDTO.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\obj\Debug\net8.0\refint\MetodosDTO.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\obj\Debug\net8.0\MetodosDTO.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\SolucionDeEcuacionesLineales\MetodosDTO\obj\Debug\net8.0\ref\MetodosDTO.dll

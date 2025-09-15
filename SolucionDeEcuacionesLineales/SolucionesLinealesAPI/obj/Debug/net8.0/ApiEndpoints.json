@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "SolucionesLinealesAPI.Controllers.GaussJordanController",
+    "Method": "Jordan",
+    "RelativePath": "GaussJordan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MetodosDTO.GaussJordanDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SolucionesLinealesAPI.Controllers.GaussSeidelController",
+    "Method": "Seidel",
+    "RelativePath": "GaussSeidel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MetodosDTO.GaussSeidelDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

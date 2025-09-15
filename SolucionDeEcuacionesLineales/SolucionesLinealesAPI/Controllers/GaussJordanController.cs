@@ -9,7 +9,7 @@ namespace SolucionesLinealesAPI.Controllers
     {
 
         [HttpPost]
-        public IActionResult Jordan([FromBody] GaussJordanDTO dto)//hacer llegar una lista o matriz q tenga los coeficiente de la diagonal principal
+        public IActionResult Jordan([FromBody] GaussJordanDTO dto)
         {
             var matriz = dto.Matriz;
 
@@ -17,8 +17,12 @@ namespace SolucionesLinealesAPI.Controllers
             {
                 double coeficienteDiagonal = matriz[i][i];
 
-                for(int j = 0;j < matriz[i].Length + 1; j++)
+                for(int j = 0;j < matriz[i].Length; j++)
                 {
+                    if(coeficienteDiagonal == 0)
+                    {
+                        return BadRequest("pivote nulo en fila " + i);
+                    }
                     matriz[i][j] = matriz[i][j] / coeficienteDiagonal;
                 }
                 for(int k = 0; k < matriz.Length; k++)
@@ -38,9 +42,26 @@ namespace SolucionesLinealesAPI.Controllers
 
             for (int i = 0; i < matriz.Length; i++)
             {
-                vectorResultado[i] = matriz[i][matriz[i].Length - 1];
-            }
+                bool sinSolucion = true;
+                for(int j = 0; j < matriz[i].Length - 1; j++)
+                {
+                    if (matriz[i][j] != 0)
+                    {
+                        sinSolucion = false;
+                        break;
+                    }
+                }
 
+
+                if(sinSolucion && matriz[i][matriz[i].Length -1] != 0)
+                {
+                    return BadRequest("Sistema sin solucion");
+                }
+
+                vectorResultado[i] = matriz[i][matriz[i].Length - 1];
+
+            }
+            return Ok(vectorResultado);
            
         }
     }
