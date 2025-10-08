@@ -19,7 +19,7 @@ namespace RegresionAPI.Controllers
 
             double tolerancia = entrada.Tolerancia;
             List<Double[]> puntosCargados = entrada.puntosCargados;
-            double grado = entrada.grado;
+            int grado = entrada.grado;
 
             //SETEAR VARIABLES
 
@@ -37,91 +37,137 @@ namespace RegresionAPI.Controllers
             }
 
             //paso 1
-            double[,] matriz = GenerarMatrizPolinomial(grado, puntosCargados);
-
-            //RESOLVER SISTEMA DE ECUACIONES, paso 2
-            matriz = GaussJordan(matriz);
-
-
-
-
-        }
-    }
-
-
-    public double[,] GenerarMatrizPolinomial(int grado, List<double[]> puntosCargados) {
-            int dimension = grado + 1;
-            double[,] matriz = new double[dimension, dimension + 1];
-            double x = 0; double y = 0;
-            foreach (double[] punto in puntosCargados)
+            if (grado < 1 || grado >= puntosCargados.Count)
             {
-                x = punto[0];
-                y = punto[1];
-                for (int fila = 0; fila < dimension; fila++)
-                {
-                    for (int col = 0; col < dimension; col++)
-                    {
-                        matriz[fila, col] += Math.Pow(x, fila + col);
-                    }
-                    matriz[fila, dimension] += Math.Pow(x, fila) * y;
-                }
+                return BadRequest("El grado debe ser al menos 1 y menor que la cantidad de puntos.");
             }
-            return matriz;
-        }
+            double[][] matriz = GenerarMatrizPolinomial(grado, puntosCargados);
 
-        public static double[,] GaussJordan(double[,] matriz)
-        {
-            int filas = matriz.GetLength(0);
-            int cols = matriz.GetLength(1);
-
-            for (int i = 0; i < filas; i++)
+            //RESOLVER SISTEMA DE ECUACIONES, paso 2 POR GAUSS-JORDAN   
+            for (int i = 0; i < matriz.Length; i++)
             {
-                double coeficienteDiagonal = matriz[i, i];
+                double coeficienteDiagonal = matriz[i][i];
 
-                for (int j = 0; j < cols; j++)
+                for (int j = 0; j < matriz[i].Length; j++)
                 {
                     if (coeficienteDiagonal == 0)
                     {
-                        throw new InvalidOperationException("pivote nulo en fila " + (i + 1));
+                        return BadRequest("ERROR EN GAUSS-JORDAN: pivote nulo en fila " + i + 1);
                     }
-                    matriz[i, j] = matriz[i, j] / coeficienteDiagonal;
+                    matriz[i][j] = matriz[i][j] / coeficienteDiagonal;
                 }
-
-                for (int k = 0; k < filas; k++)
+                for (int k = 0; k < matriz.Length; k++)
                 {
                     if (i != k)
                     {
-                        double coeficienteCero = matriz[k, i];
+                        double coeficienteCero = matriz[k][i];
 
-                        for (int a = 0; a < cols; a++)
+                        for (int a = 0; a < matriz[i].Length; a++)
                         {
-                            matriz[k, a] = matriz[k, a] - (coeficienteCero * matriz[i, a]);
+                            matriz[k][a] = matriz[k][a] - (coeficienteCero * matriz[i][a]);
                         }
                     }
                 }
             }
+            double[] vectorResultado = new double[matriz.Length];
 
-            // Chequeo de inconsistencia (fila 0...0 | b ≠ 0)
-            for (int i = 0; i < filas; i++)
+            for (int i = 0; i < matriz.Length; i++)
             {
                 bool sinSolucion = true;
-
-                for (int j = 0; j < cols - 1; j++)
+                for (int j = 0; j < matriz[i].Length - 1; j++)
                 {
-                    if (matriz[i, j] != 0)
+                    if (matriz[i][j] != 0)
                     {
                         sinSolucion = false;
                         break;
                     }
                 }
 
-                if (sinSolucion && matriz[i, cols - 1] != 0)
+
+                if (sinSolucion && matriz[i][matriz[i].Length - 1] != 0)
                 {
-                    throw new InvalidOperationException("Sistema sin solucion");
+                    return BadRequest("ERROR EN GAUSS-JORDAN: Sistema sin solucion");
+                }
+
+                vectorResultado[i] = matriz[i][matriz[i].Length - 1];
+
+            }
+
+            string funcion = string.Empty, signo = string.Empty;
+            for(int i = 0; i < vectorResultado.Count(); i++)
+            {
+                double ai = Math.Round(vectorResultado[i], 4);
+                if (i == 0 && ai != 0)
+                {
+                    funcion = $"{ai}";
+                } else if(i==1 && ai != 0)
+                {
+                    funcion = $"{ai}x {signo}" + funcion;
+                }
+                else
+                {
+                    if (ai != 0)
+                    {
+                        funcion = $"{ai}x^{i} {signo}" + funcion;
+                    }
+                }
+                signo = ai>0 ? "+" : string.Empty;
+            }
+
+            double x = 0, y = 0, sr = 0, st = 0, SumY = 0;
+            int n = 0;
+            foreach (double[] punto in puntosCargados)
+            {
+                x = punto[0];
+                y = punto[1];
+                double suma = 0;
+                for (int i = 0; i < vectorResultado.Count(); i++)
+                {
+                    suma += vectorResultado[i] * Math.Pow(x, i);
+                    SumY = punto[1];
+                    n++;
+                }
+                sr += Math.Pow(suma - y, 2);  //cuantp varian los datos
+                st += Math.Pow(SumY / n - y, 2);  //cuanto error tiene el programa
+            }
+
+
+        }
+
+        public double[][] GenerarMatrizPolinomial(int grado, List<double[]> puntosCargados)
+        {
+            int dimension = grado + 1;
+
+            // Crear matriz dentada (array de arrays)
+            double[][] matriz = new double[dimension][];
+            for (int i = 0; i < dimension; i++)
+            {
+                matriz[i] = new double[dimension + 1];
+            }
+
+            // Variables temporales
+            double x = 0;
+            double y = 0;
+
+            // Calcular sumatorias para las ecuaciones normales
+            foreach (double[] punto in puntosCargados)
+            {
+                x = punto[0];
+                y = punto[1];
+
+                for (int fila = 0; fila < dimension; fila++)
+                {
+                    for (int col = 0; col < dimension; col++)
+                    {
+                        matriz[fila][col] += Math.Pow(x, fila + col);
+                    }
+
+                    matriz[fila][dimension] += Math.Pow(x, fila) * y;
                 }
             }
 
             return matriz;
         }
+
     }
 }

@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\RegresionAPI\\Controllers\\RegresionLinealController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RegresionAPI\\Controllers\\RegresionLinealController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|c:\\users\\julia\\onedrive\\escritorio\\tp3analisis\\tp3\\tp3\\regresionapi\\controllers\\regresionpolinomialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|solutionrelative:regresionapi\\controllers\\regresionpolinomialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|c:\\users\\julia\\onedrive\\escritorio\\tp3analisis\\tp3\\tp3\\regresionapi\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|solutionrelative:regresionapi\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|c:\\users\\julia\\onedrive\\escritorio\\tp3analisis\\tp3\\tp3\\tp3\\regresionpolinomialdto\\datoentradarpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|solutionrelative:tp3\\regresionpolinomialdto\\datoentradarpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoSalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -39,7 +47,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "DatoEntradaRPDto.cs",
+              "DocumentMoniker": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
+              "RelativeDocumentMoniker": "TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
+              "ToolTip": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
+              "RelativeToolTip": "TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T00:14:58.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegresionPolinomialController.cs",
+              "DocumentMoniker": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
+              "RelativeDocumentMoniker": "RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
+              "ToolTip": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
+              "RelativeToolTip": "RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T00:14:00.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DatoSalida.cs",
               "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoSalida.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoSalida.cs",
@@ -51,20 +85,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RegresionLinealController.cs",
               "DocumentMoniker": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\RegresionAPI\\Controllers\\RegresionLinealController.cs",
               "RelativeDocumentMoniker": "RegresionAPI\\Controllers\\RegresionLinealController.cs",
               "ToolTip": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\RegresionAPI\\Controllers\\RegresionLinealController.cs",
               "RelativeToolTip": "RegresionAPI\\Controllers\\RegresionLinealController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCUAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCUAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-01T02:17:21.677Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Class.cs",
               "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\RegresionAPI\\Controllers\\Class.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\RegresionAPI\\Controllers\\Class.cs",
@@ -76,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DatoEntrada.cs",
               "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoEntrada.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoEntrada.cs",

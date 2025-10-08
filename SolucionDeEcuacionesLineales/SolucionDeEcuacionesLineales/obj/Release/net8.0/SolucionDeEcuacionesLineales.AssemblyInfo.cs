@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SolucionDeEcuacionesLineales")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f9a4e352cb31d2c089d83ab7ecb5ba554de4498")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f31c4f06e06cc8511c354a7398ff8fd3dab9efd")]
 [assembly: System.Reflection.AssemblyProductAttribute("SolucionDeEcuacionesLineales")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SolucionDeEcuacionesLineales")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
