@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|c:\\users\\julia\\onedrive\\escritorio\\tp3analisis\\tp3\\tp3\\regresionapi\\controllers\\regresionpolinomialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|solutionrelative:regresionapi\\controllers\\regresionpolinomialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|c:\\users\\julia\\onedrive\\escritorio\\tp3analisis\\tp3\\tp3\\tp3\\regresionpolinomialdto\\datoentradarpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|solutionrelative:tp3\\regresionpolinomialdto\\datoentradarpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|c:\\users\\julia\\onedrive\\escritorio\\tp3analisis\\tp3\\tp3\\tp3\\regresionlinealdto\\datoentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|solutionrelative:tp3\\regresionlinealdto\\datoentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|c:\\users\\julia\\onedrive\\escritorio\\tp3analisis\\tp3\\tp3\\regresionapi\\controllers\\regresionpolinomialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|solutionrelative:regresionapi\\controllers\\regresionpolinomialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|c:\\users\\julia\\onedrive\\escritorio\\tp3analisis\\tp3\\tp3\\regresionapi\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,7 +39,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 870,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DatoSalida.cs",
               "DocumentMoniker": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\TP3\\RegresionLinealDto\\DatoSalida.cs",
               "RelativeDocumentMoniker": "TP3\\RegresionLinealDto\\DatoSalida.cs",
@@ -68,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DatoEntrada.cs",
               "DocumentMoniker": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\TP3\\RegresionLinealDto\\DatoEntrada.cs",
               "RelativeDocumentMoniker": "TP3\\RegresionLinealDto\\DatoEntrada.cs",
@@ -76,12 +76,11 @@
               "RelativeToolTip": "TP3\\RegresionLinealDto\\DatoEntrada.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T17:58:50.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T17:58:50.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DatoEntradaRPDto.cs",
               "DocumentMoniker": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
               "RelativeDocumentMoniker": "TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
@@ -93,14 +92,18 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "RegresionPolinomialController.cs",
               "DocumentMoniker": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
               "RelativeDocumentMoniker": "RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
               "ToolTip": "C:\\Users\\julia\\OneDrive\\Escritorio\\tp3ANALISIS\\TP3\\TP3\\RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
               "RelativeToolTip": "RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAgwIUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAQwIUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T00:14:00.103Z",
               "EditorCaption": ""
@@ -152,10 +155,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-01T02:12:49.255Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

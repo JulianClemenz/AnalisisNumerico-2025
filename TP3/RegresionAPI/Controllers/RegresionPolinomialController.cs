@@ -131,7 +131,7 @@ namespace RegresionAPI.Controllers
                 st += Math.Pow(SumY / n - y, 2);  //cuanto error tiene el programa
             }
 
-
+            return Ok();
         }
 
         public double[][] GenerarMatrizPolinomial(int grado, List<double[]> puntosCargados)
