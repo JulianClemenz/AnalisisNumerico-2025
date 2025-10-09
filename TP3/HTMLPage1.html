@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Regresiones con GeoGebra</title>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <style>
+        :root {
+            --bg: #0b1220;
+            --panel: #0e1628;
+            --ring: #1a2b46;
+            --text: #e7eefc;
+            --muted: #9fb3c8;
+            --ok: #14532d;
+            --err: #4a1014;
+            --brand: #38bdf8;
+            --accent: #22c55e;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html, body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg,#091121,#070d1a);
+            color: var(--text);
+            font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue","Noto Sans",Arial;
+        }
+
+        header {
+            display: flex;
+            gap: .6rem;
+            align-items: center;
+            padding: 14px 18px;
+            border-bottom: 1px solid #0e1a2b40;
+            background: rgba(9,13,23,.7);
+            position: sticky;
+            top: 0;
+            backdrop-filter: saturate(140%) blur(6px)
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: clamp(18px,2.2vw,24px)
+            }
+
+        .badge {
+            border: 1px solid var(--ring);
+            padding: .2rem .55rem;
+            border-radius: 999px;
+            color: #b8c8e0;
+            font-size: .85rem
+        }
+
+        main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 18px
+        }
+
+        .grid {
+            display: grid;
+            gap: 18px
+        }
+
+        @media(min-width:980px) {
+            .grid {
+                grid-template-columns: 420px 1fr
+            }
+        }
+
+        .card {
+            background: linear-gradient(180deg,var(--panel),#0b1220);
+            border: 1px solid #0f213b;
+            border-radius: 16px
+        }
+
+        .head {
+            padding: 14px 16px 0
+        }
+
+            .head h2 {
+                margin: 0;
+                font-size: 1.08rem
+            }
+
+        .body {
+            padding: 14px 16px 16px
+        }
+
+        label {
+            display: block;
+            font-size: .9rem;
+            color: var(--muted);
+            margin-bottom: 6px
+        }
+
+        input[type="number"], select, textarea {
+            width: 100%;
+            background: #0a1528;
+            color: #dbe8ff;
+            border: 1px solid #18314d;
+            border-radius: 10px;
+            padding: 10px 12px;
+            outline: none;
+            transition: .15s border,.15s box-shadow;
+        }
+
+            input:focus, select:focus, textarea:focus {
+                border-color: #2b6cb0;
+                box-shadow: 0 0 0 3px rgba(59,130,246,.2)
+            }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            align-items: end;
+            flex-wrap: wrap
+        }
+
+        .btn {
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 1px solid #1b3a5a;
+            background: #0a1424;
+            color: #cfe4ff;
+            cursor: pointer;
+            font-weight: 600
+        }
+
+            .btn:hover {
+                background: #0c1a2f
+            }
+
+            .btn.primary {
+                border-color: #14532d;
+                background: #0c1f16
+            }
+
+                .btn.primary:hover {
+                    background: #0e281d
+                }
+
+            .btn.danger {
+                border-color: #4a1014;
+                background: #1b0a0c;
+                color: #ffd7d7
+            }
+
+        .listbox {
+            min-height: 120px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+        }
+
+        .status {
+            margin-top: 12px;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid var(--ring);
+            background: #07111e;
+            display: none
+        }
+
+            .status.ok {
+                border-color: var(--ok);
+                background: #08140f
+            }
+
+            .status.err {
+                border-color: var(--err);
+                background: #19090b
+            }
+
+        .kv {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 10px;
+            margin: 10px 0
+        }
+
+            .kv div {
+                padding: 10px 12px;
+                border: 1px solid var(--ring);
+                border-radius: 10px;
+                background: #07111e;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap
+            }
+
+        .big {
+            font-size: 1.1rem;
+            font-weight: 700
+        }
+
+        #ggbContainer {
+            height: 480px;
+            width: 100%;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            overflow: hidden
+        }
+
+        .chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap
+        }
+
+        .chip {
+            background: #1f2937;
+            border: 1px solid #223047;
+            color: #cbd5e1;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: .85rem
+        }
+
+            .chip .x {
+                margin-left: 8px;
+                cursor: pointer;
+                opacity: .75
+            }
+
+        .note {
+            font-size: .8rem;
+            color: #9fb3c8
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Regresiones</h1>
+        <span class="badge">GeoGebra embebido</span>
+    </header>
+
+    <main>
+        <div class="grid">
+            <!-- Entrada -->
+            <section class="card">
+                <div class="head"><h2>Datos de Entrada</h2></div>
+                <div class="body">
+                    <div class="row">
+                        <div style="flex:1 1 120px">
+                            <label for="x">X</label>
+                            <input id="x" type="number" step="any" placeholder="1.5" />
+                        </div>
+                        <div style="flex:1 1 120px">
+                            <label for="y">Y</label>
+                            <input id="y" type="number" step="any" placeholder="2.8" />
+                        </div>
+                        <button id="add" class="btn" style="flex:0 0 auto;margin-top:28px">Agregar punto</button>
+                    </div>
+
+                    <div class="row" style="margin-top:10px">
+                        <div style="flex:1 1 160px">
+                            <label for="metodo">Método</label>
+                            <select id="metodo">
+                                <option value="lineal">Regresión Lineal</option>
+                                <option value="polinomial">Regresión Polinomial</option>
+                            </select>
+                        </div>
+                        <div style="flex:1 1 140px">
+                            <label for="grado">Grado (solo polinomial)</label>
+                            <input id="grado" type="number" min="1" value="2" step="1" />
+                        </div>
+                        <div style="flex:1 1 140px">
+                            <label for="tol">Tolerancia (%)</label>
+                            <input id="tol" type="number" min="0" max="100" step="any" value="80" />
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top:10px">
+                        <button id="calc" class="btn primary">Calcular</button>
+                        <button id="edit" class="btn">Editar lista</button>
+                        <button id="delLast" class="btn">Borrar último</button>
+                        <button id="delAll" class="btn danger">Borrar todos</button>
+                    </div>
+
+                    <div style="margin-top:12px">
+                        <label>Puntos ingresados (x,y por línea)</label>
+                        <textarea id="list" class="listbox" readonly placeholder="Ej.\n-1,1\n-2,0\n4,5\n3,2"></textarea>
+                        <div class="note">Usa “Editar lista” para pegar/ajustar muchos puntos. Formato: <code>x,y</code> por línea.</div>
+                    </div>
+
+                    <div id="alert" class="status"></div>
+                </div>
+            </section>
+
+            <!-- Salida + GeoGebra -->
+            <section class="card" style="display:grid; grid-template-rows:auto 1fr">
+                <div class="body">
+                    <h2>Resultados</h2>
+                    <div class="kv">
+                        <div>Función</div><div id="fn" class="big">—</div>
+                        <div>Correlación (r)</div><div id="r">—</div>
+                        <div>Efectividad</div><div id="ok">—</div>
+                    </div>
+                    <div id="chips" class="chips"></div>
+                </div>
+                <div id="ggbContainer"></div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+(() => {
+  // ============== CONFIG API ==================
+  const API_BASE = ""; // ej: "https://localhost:7143"
+  const ENDPOINTS = {
+    lineal: "/RegresionLineal",
+    polinomial: "/RegresionPolinomial"
+  };
+
+  // ============== GEO GEBRA ===================
+  let ggbApplet;
+  function initGeoGebra(){
+    const params = {
+      appName: "graphing",
+      showToolBar: false,
+      showAlgebraInput: false,
+      showMenuBar: false,
+      showResetIcon: true,
+      enableRightClick: false,
+      scaleContainerClass: "",
+      enableLabelDrags: false,
+      enableShiftDragZoom: true,
+      perspective: "G",
+      borderColor: "#0f213b"
+    };
+    const applet = new GGBApplet(params, true);
+    applet.setHTML5Codebase("https://www.geogebra.org/apps/5.2.865.0/");
+    applet.inject("ggbContainer");
+    // guardamos referencia cuando cargue
+    window.ggbOnInit = function(apiName){
+      ggbApplet = applet.getAppletObject();
+      resetScene();
+    }
+  }
+
+  function resetScene(){
+    if(!ggbApplet) return;
+    // Elimina todo y configura ejes/cuadrícula
+    ggbApplet.reset();
+    ggbApplet.setGridVisible(true);
+    ggbApplet.setAxesVisible(true, true);
+    ggbApplet.setCoordSystem(-6, 6, -4, 6); // xmin,xmax,ymin,ymax (ajustable)
+  }
+
+  // ============== STATE & DOM =================
+  let puntos = [];
+  let editMode = false;
+
+  const $ = s => document.querySelector(s);
+  const xIn = $("#x"), yIn = $("#y");
+  const gradoIn = $("#grado"), tolIn = $("#tol"), metodoSel = $("#metodo");
+  const listBox = $("#list"), chips = $("#chips");
+  const fnOut = $("#fn"), rOut = $("#r"), okOut = $("#ok");
+  const alertBox = $("#alert");
+
+  const fmt = n => (Math.abs(n) >= 1e6 || (Math.abs(n) > 0 && Math.abs(n) < 1e-3))
+    ? Number(n).toExponential(2)
+    : Number(n).toFixed(4).replace(/\.?0+$/,'');
+
+  const showOK  = (m)=>{ alertBox.className="status ok"; alertBox.textContent=m; alertBox.style.display="block"; };
+  const showErr = (m)=>{ alertBox.className="status err"; alertBox.textContent=m; alertBox.style.display="block"; };
+  const clearAlert = ()=>{ alertBox.style.display="none"; };
+
+  function renderList(){
+    listBox.value = puntos.map(p => `${p[0]}, ${p[1]}`).join("\n");
+    chips.innerHTML = "";
+    puntos.forEach((p,i)=>{
+      const el = document.createElement("span");
+      el.className = "chip";
+      el.innerHTML = `P${i}=(${fmt(p[0])},${fmt(p[1])}) <span class="x" title="Quitar">×</span>`;
+      el.querySelector(".x").addEventListener("click", ()=>{ puntos.splice(i,1); renderList(); drawPoints(); });
+      chips.appendChild(el);
+    });
+  }
+
+  function parseListBox(){
+    const lines = listBox.value.split(/\r?\n/).map(s=>s.trim()).filter(Boolean);
+    const arr = [];
+    for(const line of lines){
+      const m = line.split(/[;,]\s*/);
+      if(m.length<2) continue;
+      const x = Number(m[0]); const y = Number(m[1]);
+      if(Number.isFinite(x) && Number.isFinite(y)) arr.push([x,y]);
+    }
+    return arr;
+  }
+
+  // ============== GEO: DIBUJO =================
+  function drawPoints(){
+    if(!ggbApplet) return;
+    resetScene();
+    // plot puntos como A0, A1, ...
+    puntos.forEach((p, i) => {
+      const name = `P${i}`;
+      ggbApplet.evalCommand(`${name}=(${p[0]},${p[1]})`);
+      ggbApplet.setLabelVisible(name, true);
+    });
+  }
+
+  function drawFunctionFromBackend(funcionStr){
+    if(!ggbApplet || !funcionStr) return;
+    // El backend devuelve algo como "y = 0.65x + 1.34" o "y = 1 + 0.5x + 0.2x^2"
+    // Lo convertimos a "f(x) = ..." y lo mandamos a GeoGebra.
+    const rhs = funcionStr.replace(/^y\s*=\s*/i,'').trim();
+    // GeoGebra acepta multiplicación implícita (2x), así que no es necesario insertar '*'
+    ggbApplet.evalCommand(`f(x)=${rhs}`);
+    // Traza visible
+    ggbApplet.setLabelVisible("f", true);
+  }
+
+  // ============== API CALLS ===================
+  async function calcular(){
+    clearAlert();
+    if(puntos.length < 2){
+      showErr("Se requieren al menos 2 puntos.");
+      return;
+    }
+    const tolerancia = Number(tolIn.value ?? 0);
+    const metodo = metodoSel.value;
+    try{
+      let url = API_BASE + (metodo === "lineal" ? ENDPOINTS.lineal : ENDPOINTS.polinomial);
+      let body;
+      if(metodo === "lineal"){
+        body = {
+          puntosCargados: puntos.map(([x,y]) => [x,y]),
+          Tolerancia: tolerancia
+        }; // DatoEntrada
+      }else{
+        const grado = Math.max(1, Number(gradoIn.value||1));
+        body = {
+          puntosCargados: puntos.map(([x,y]) => [x,y]),
+          Tolerancia: tolerancia,
+          metodo: true,   // presente en tu DTO, no usado en el server
+          grado: grado
+        }; // DatoEntradaRPDto
+      }
+
+      const resp = await fetch(url, {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify(body)
+      });
+
+      const text = await resp.text();
+      let data;
+      try { data = JSON.parse(text); } catch { data = null; }
+
+      if(!resp.ok){
+        // Mostrar error del backend (BadRequest)
+        const msg = data && (data.title || data.error || data.message) ? (data.title || data.error || data.message) : text || "Error desconocido";
+        showErr(`Error ${resp.status}: ${msg}`);
+        return;
+      }
+
+      // data es DatoSalida { Funcion, PorcCorrelacion, EfectAjuste }
+      const { Funcion, PorcCorrelacion, EfectAjuste } = data;
+      fnOut.textContent = Funcion || "—";
+      rOut.textContent  = (PorcCorrelacion!=null) ? `${fmt(PorcCorrelacion)} %` : "—";
+      okOut.textContent = (EfectAjuste===true ? "Aceptable" : "No aceptable");
+      showOK("Cálculo realizado correctamente.");
+
+      drawPoints();
+      if(Funcion) drawFunctionFromBackend(Funcion);
+
+    }catch(err){
+      console.error(err);
+      showErr(`Fallo de red o CORS: ${String(err)}`);
+    }
+  }
+
+  // ============== EVENTS ======================
+  $("#add").addEventListener("click", () => {
+    const x = Number(xIn.value), y = Number(yIn.value);
+    if(!Number.isFinite(x) || !Number.isFinite(y)){
+      showErr("Debes ingresar números válidos para X e Y.");
+      return;
+    }
+    puntos.push([x,y]);
+    xIn.value=""; yIn.value="";
+    renderList(); drawPoints(); clearAlert();
+  });
+
+  $("#calc").addEventListener("click", calcular);
+
+  $("#edit").addEventListener("click", () => {
+    editMode = !editMode;
+    listBox.readOnly = !editMode;
+    $("#edit").textContent = editMode ? "Guardar lista" : "Editar lista";
+    if(!editMode){
+      // guardar cambios
+      const parsed = parseListBox();
+      if(parsed.length === 0){
+        showErr("La lista no contiene puntos válidos (formato x,y).");
+        return;
+      }
+      puntos = parsed;
+      renderList(); drawPoints();
+    }
+  });
+
+  $("#delLast").addEventListener("click", () => {
+    puntos.pop(); renderList(); drawPoints();
+  });
+
+  $("#delAll").addEventListener("click", () => {
+    puntos = []; renderList(); resetScene();
+  });
+
+  // Cambios de método: habilita/deshabilita grado
+  $("#metodo").addEventListener("change", () => {
+    const pol = metodoSel.value === "polinomial";
+    gradoIn.disabled = !pol;
+  });
+
+  // ============== START =======================
+  window.addEventListener("load", () => {
+    initGeoGebra();
+    gradoIn.disabled = (metodoSel.value !== "polinomial");
+    // Semilla de ejemplo:
+    puntos = [[-1,1],[-2,0],[4,5],[3,2]];
+    renderList();
+  });
+})();
+    </script>
+</body>
+</html>

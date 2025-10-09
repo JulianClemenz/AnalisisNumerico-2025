@@ -1,6 +1,7 @@
 ﻿using Entity;
 using Microsoft.AspNetCore.Mvc;
 using TP3;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace RegresionAPI.Controllers
 {
@@ -114,8 +115,10 @@ namespace RegresionAPI.Controllers
                 signo = ai>0 ? "+" : string.Empty;
             }
 
+            double r = 0;
             double x = 0, y = 0, sr = 0, st = 0, SumY = 0;
             int n = 0;
+
             foreach (double[] punto in puntosCargados)
             {
                 x = punto[0];
@@ -131,7 +134,17 @@ namespace RegresionAPI.Controllers
                 st += Math.Pow(SumY / n - y, 2);  //cuanto error tiene el programa
             }
 
-            return Ok();
+            //calcular el coeficiente de correlación r.
+            r = Math.Sqrt((st - sr) / st) * 100;
+
+            DatoSalida salida = new DatoSalida()
+            {
+                Funcion = funcion,
+                PorcCorrelacion = r,
+                EfectAjuste = r > tolerancia
+            };
+
+            return Ok(salida);
         }
 
         public double[][] GenerarMatrizPolinomial(int grado, List<double[]> puntosCargados)
