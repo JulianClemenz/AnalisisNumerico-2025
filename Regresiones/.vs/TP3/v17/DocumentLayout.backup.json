@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Frontend{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|Frontend{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\tp3\\regresionapi\\controllers\\regresionpolinomialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|solutionrelative:regresionapi\\controllers\\regresionpolinomialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\tp3\\regresionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|solutionrelative:regresionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\tp3\\tp3\\regresionlinealdto\\datosalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|solutionrelative:tp3\\regresionlinealdto\\datosalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\tp3\\tp3\\regresionlinealdto\\datoentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|solutionrelative:tp3\\regresionlinealdto\\datoentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\tp3\\tp3\\regresionpolinomialdto\\datoentradarpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EBE782E-F314-4C19-8600-6E9295139695}|TP3\\Entity.csproj|solutionrelative:tp3\\regresionpolinomialdto\\datoentradarpdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\tp3\\regresionapi\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80C53FAA-B0EF-49C7-A03E-432B10BCCE82}|RegresionAPI\\RegresionAPI.csproj|solutionrelative:regresionapi\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoSalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\RegresionAPI\\Controllers\\Class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoEntrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 870,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\RegresionAPI\\Program.cs",
+              "RelativeDocumentMoniker": "RegresionAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\RegresionAPI\\Program.cs",
+              "RelativeToolTip": "RegresionAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T20:22:25.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HTMLPage1.html",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\HTMLPage1.html",
+              "RelativeDocumentMoniker": "HTMLPage1.html",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\HTMLPage1.html",
+              "RelativeToolTip": "HTMLPage1.html",
+              "ViewState": "AgIAAMQBAAAAAAAAAADwv+MBAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-09T15:59:24.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatoEntrada.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\RegresionLinealDto\\DatoEntrada.cs",
+              "RelativeDocumentMoniker": "TP3\\RegresionLinealDto\\DatoEntrada.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\RegresionLinealDto\\DatoEntrada.cs",
+              "RelativeToolTip": "TP3\\RegresionLinealDto\\DatoEntrada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T17:58:50.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatoEntradaRPDto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
+              "RelativeDocumentMoniker": "TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
+              "RelativeToolTip": "TP3\\RegresionPolinomialDto\\DatoEntradaRPDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T00:14:58.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegresionPolinomialController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
+              "RelativeDocumentMoniker": "RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
+              "RelativeToolTip": "RegresionAPI\\Controllers\\RegresionPolinomialController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T00:14:00.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegresionLinealController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\RegresionAPI\\Controllers\\RegresionLinealController.cs",
+              "RelativeDocumentMoniker": "RegresionAPI\\Controllers\\RegresionLinealController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\RegresionAPI\\Controllers\\RegresionLinealController.cs",
+              "RelativeToolTip": "RegresionAPI\\Controllers\\RegresionLinealController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T02:17:21.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DatoSalida.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoSalida.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoSalida.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoSalida.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoSalida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T02:18:30.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatoSalida.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\RegresionLinealDto\\DatoSalida.cs",
+              "RelativeDocumentMoniker": "TP3\\RegresionLinealDto\\DatoSalida.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\RegresionLinealDto\\DatoSalida.cs",
+              "RelativeToolTip": "TP3\\RegresionLinealDto\\DatoSalida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T17:58:51.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\RegresionAPI\\Controllers\\Class.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\RegresionAPI\\Controllers\\Class.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\RegresionAPI\\Controllers\\Class.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\RegresionAPI\\Controllers\\Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T02:17:17.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DatoEntrada.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoEntrada.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoEntrada.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoEntrada.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\TP3\\TP3\\DatoEntrada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T02:12:49.255Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
