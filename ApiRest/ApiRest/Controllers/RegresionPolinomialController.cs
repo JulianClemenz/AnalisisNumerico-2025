@@ -94,48 +94,53 @@ namespace RegresionAPI.Controllers
 
             }
 
-            string funcion = string.Empty, signo = string.Empty;
-            for(int i = 0; i < vectorResultado.Length; i++)
+            var terminos = new List<string>();
+
+            for (int i = vectorResultado.Length - 1; i >= 0; i--)
             {
                 double ai = Math.Round(vectorResultado[i], 4);
-                if (i == 0 && ai != 0)
+
+                if (Math.Abs(ai) < 1e-12) continue; // ignorar coeficientes ~0
+
+                string termino = i switch
                 {
-                    funcion = $"{ai}";
-                } else if(i==1 && ai != 0)
-                {
-                    funcion = $"{ai}x {signo}" + funcion;
-                }
-                else
-                {
-                    if (ai != 0)
-                    {
-                        funcion = $"{ai}x^{i} {signo}" + funcion;
-                    }
-                }
-                signo = ai>0 ? "+" : string.Empty;
+                    0 => $"{ai}",           // término independiente
+                    1 => $"{ai}x",          // término lineal
+                    _ => $"{ai}x^{i}"       // términos de grado superior
+                };
+
+                terminos.Add(termino);
             }
 
-            double r = 0;
-            double x = 0, y = 0, sr = 0, st = 0, SumY = 0;
-            int n = 0;
+            // unir los términos con + y corregir signos
+            string funcion = string.Join(" + ", terminos).Replace("+ -", "- ");
 
-            foreach (double[] punto in puntosCargados)
+            // --- Cálculo corregido de Sr, St y r ---
+            double sumY = 0;
+            foreach (var p in puntosCargados)
+                sumY += p[1];
+
+            int n = puntosCargados.Count;
+            double yMean = sumY / n;
+
+            double sr = 0, st = 0;
+
+            foreach (var p in puntosCargados)
             {
-                x = punto[0];
-                y = punto[1];
-                double suma = 0;
+                double x = p[0];
+                double y = p[1];
+                double yhat = 0;
+
                 for (int i = 0; i < vectorResultado.Length; i++)
-                {
-                    suma += vectorResultado[i] * Math.Pow(x, i);
-                    SumY = punto[1];
-                    n++;
-                }
-                sr += Math.Pow(suma - y, 2);  //cuantp varian los datos
-                st += Math.Pow(SumY / n - y, 2);  //cuanto error tiene el programa
+                    yhat += vectorResultado[i] * Math.Pow(x, i);
+
+                sr += Math.Pow(yhat - y, 2);
+                st += Math.Pow(y - yMean, 2);
             }
 
-            //calcular el coeficiente de correlación r.
-            r = Math.Sqrt((st - sr) / st) * 100;
+            // Evitar división por cero
+            double r = st == 0 ? 0 : Math.Sqrt((st - sr) / st) * 100;
+
 
             DatoSalidaGeneral salida = new DatoSalidaGeneral()
             {
@@ -146,6 +151,7 @@ namespace RegresionAPI.Controllers
 
             return Ok(salida);
         }
+
         [NonAction]
         private double[][] GenerarMatrizPolinomial(int grado, List<double[]> puntosCargados)
         {

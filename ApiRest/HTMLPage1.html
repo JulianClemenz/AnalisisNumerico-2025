@@ -69,7 +69,7 @@
             gap: 18px
         }
 
-        @media(min-width:980px) {
+        @media (min-width:980px) {
             .grid {
                 grid-template-columns: 420px 1fr
             }
@@ -232,6 +232,15 @@
             font-size: .8rem;
             color: #9fb3c8
         }
+
+        #fn {
+            white-space: normal !important; /* Permite saltos de línea */
+            word-break: break-word; /* Corta largas expresiones si es necesario */
+            overflow-wrap: anywhere; /* Permite ajustar ecuaciones largas */
+            max-height: 6rem; /* Evita que crezca demasiado */
+            overflow-y: auto; /* Scroll si es muy larga */
+        }
+
     </style>
 </head>
 <body>
@@ -311,31 +320,45 @@
 
     <script>
         (() => {
-            // ===== CONFIG API (forzado para file://) =====
+            // ===== CONFIG API =====
             const API_SCHEME = 'https'; // 'http' si tu API corre sin TLS
             const API_PORT = 7037;    // <-- CAMBIÁ ESTE SI USÁS OTRO
             const API_BASE = `${API_SCHEME}://localhost:${API_PORT}`;
             const ENDPOINTS = { lineal: "/RegresionLineal", polinomial: "/RegresionPolinomial" };
 
             // ================== GEO GEBRA ===================
-            let ggbApplet;
+            /** @type {GGBApplet} */
+            let applet;
+            /** @type {any} API de GeoGebra (ggb) */
+            let ggb = null;
+
             function initGeoGebra() {
                 const params = {
-                    appName: "graphing", showToolBar: false, showAlgebraInput: false, showMenuBar: false,
-                    showResetIcon: true, enableRightClick: false, perspective: "G", borderColor: "#0f213b",
-                    enableShiftDragZoom: true
+                    appName: "graphing",
+                    showToolBar: false,
+                    showAlgebraInput: false,
+                    showMenuBar: false,
+                    showResetIcon: true,
+                    enableRightClick: false,
+                    perspective: "G",
+                    borderColor: "#0f213b",
+                    enableShiftDragZoom: true,
+                    appletOnLoad: function (api) {
+                        ggb = api;
+                        resetScene();
+                    }
                 };
-                const applet = new GGBApplet(params, true);
-                applet.setHTML5Codebase("https://www.geogebra.org/apps/5.2.865.0/");
-                applet.inject("ggbContainer");
-                window.ggbOnInit = function () { ggbApplet = applet.getAppletObject(); resetScene(); }
+                applet = new GGBApplet(params, true);
+                // Inyectar cuando todo está cargado (incl. deployggb)
+                window.addEventListener("load", () => applet.inject("ggbContainer"));
             }
+
             function resetScene() {
-                if (!ggbApplet) return;
-                ggbApplet.reset();
-                ggbApplet.setGridVisible(true);
-                ggbApplet.setAxesVisible(true, true);
-                ggbApplet.setCoordSystem(-6, 6, -4, 6);
+                if (!ggb) return;
+                try { ggb.reset(); } catch { }
+                try { ggb.setGridVisible(true); } catch { }
+                try { ggb.setAxesVisible(true, true); } catch { }
+                try { ggb.setCoordSystem(-6, 6, -4, 6); } catch { }
             }
 
             // ================== STATE & DOM =================
@@ -350,7 +373,9 @@
             const alertBox = $("#alert");
 
             const fmt = n => (Math.abs(n) >= 1e6 || (Math.abs(n) > 0 && Math.abs(n) < 1e-3))
-                ? Number(n).toExponential(2) : Number(n).toFixed(4).replace(/\.?0+$/, '');
+                ? Number(n).toExponential(2)
+                : Number(n).toFixed(4).replace(/\.?0+$/, '');
+
             const showOK = m => { alertBox.className = "status ok"; alertBox.textContent = m; alertBox.style.display = "block"; };
             const showErr = m => { alertBox.className = "status err"; alertBox.textContent = m; alertBox.style.display = "block"; };
             const clearAlert = () => { alertBox.style.display = "none"; };
@@ -362,7 +387,10 @@
                     const el = document.createElement("span");
                     el.className = "chip";
                     el.innerHTML = `P${i}=(${fmt(p[0])},${fmt(p[1])}) <span class="x" title="Quitar">×</span>`;
-                    el.querySelector(".x").addEventListener("click", () => { puntos.splice(i, 1); renderList(); drawPoints(); });
+                    el.querySelector(".x").addEventListener("click", () => {
+                        puntos.splice(i, 1);
+                        renderList(); drawPoints();
+                    });
                     chips.appendChild(el);
                 });
             }
@@ -371,7 +399,7 @@
                 const lines = listBox.value.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
                 const arr = [];
                 for (const line of lines) {
-                    // admite "x,y" | "x y" | "x; y"
+                    // admite "x,y" | "x y" | "x; y" | "x|y"
                     const m = line.split(/[;,|\s]\s*/).filter(Boolean);
                     if (m.length < 2) continue;
                     const x = Number(m[0].replace(',', '.'));
@@ -383,38 +411,37 @@
 
             // ================== GEO: DIBUJO =================
             function drawPoints() {
-                if (!ggbApplet) return;
+                if (!ggb) return;
                 resetScene();
                 puntos.forEach((p, i) => {
                     const name = `P${i}`;
-                    ggbApplet.evalCommand(`${name}=(${p[0]},${p[1]})`);
-                    ggbApplet.setLabelVisible(name, true);
+                    ggb.evalCommand(`${name}=(${p[0]},${p[1]})`);
+                    ggb.setLabelVisible(name, true);
                 });
             }
 
-            // 🔧 CORREGIDA: borra f previa, coma→punto, y usa := para fijar nombre
             function drawFunctionFromBackend(funcionStr) {
-                if (!ggbApplet || !funcionStr) return;
+                if (!ggb || !funcionStr) return;
 
-                const rhs = funcionStr
+                const rhs = String(funcionStr)
                     .replace(/^y\s*=\s*/i, '')   // quita "y ="
                     .replace(/\+\s*-/g, '- ')    // "+ -" -> "-"
                     .replace(/-\s*-/g, '+ ')     // "- -" -> "+"
                     .replace(/\s+/g, ' ')        // normaliza espacios
-                    .replace(/,/g, '.')          // **coma decimal → punto**
+                    .replace(/,/g, '.')          // coma decimal -> punto (por si viene así)
                     .trim();
 
-                try { ggbApplet.evalCommand('Delete(f)'); } catch { }
+                try { ggb.deleteObject('f'); } catch { }
 
                 if (!rhs) return;
-                const ok = ggbApplet.evalCommand(`f(x):=${rhs}`);
+                const ok = ggb.evalCommand(`f(x):=${rhs}`);
                 if (!ok) {
                     console.warn('GeoGebra no pudo interpretar la función:', rhs);
                     return;
                 }
                 try {
-                    ggbApplet.setLabelVisible('f', true);
-                    ggbApplet.setLineThickness('f', 5);
+                    ggb.setLabelVisible('f', true);
+                    ggb.setLineThickness('f', 5);
                 } catch { }
             }
 
@@ -423,7 +450,7 @@
                 const res = await fetch(url, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    credentials: "omit", // importante en DEV con AllowAnyOrigin
+                    credentials: "omit",
                     body: JSON.stringify(body)
                 });
                 const text = await res.text();
@@ -439,7 +466,7 @@
                 clearAlert();
                 if (puntos.length < 2) { showErr("Se requieren al menos 2 puntos."); return; }
 
-                const tolerancia = Number(tolIn.value ?? 0);
+                const tolerancia = Number(tolIn.value ?? 0); // % (tus controladores devuelven r * 100)
                 const metodo = metodoSel.value;
 
                 try {
@@ -449,9 +476,11 @@
                         : { puntosCargados: puntos.map(([x, y]) => [x, y]), tolerancia, grado: Math.max(1, Number(gradoIn.value || 1)) };
 
                     const data = await postJson(url, body);
-                    const fn = data.funcion ?? data.Funcion ?? "—";
-                    const pr = data.porcCorrelacion ?? data.PorcCorrelacion;
-                    const eff = (data.efectAjuste ?? data.EfectAjuste) === true;
+
+                    // compat: Propiedades con mayúscula/minúscula
+                    const fn = data.Funcion ?? data.funcion ?? "—";
+                    const pr = data.PorcCorrelacion ?? data.porcCorrelacion;
+                    const eff = (data.EfectAjuste ?? data.efectAjuste) === true;
 
                     fnOut.textContent = fn;
                     rOut.textContent = (pr != null) ? `${fmt(pr)} %` : "—";
@@ -474,7 +503,9 @@
                 puntos.push([x, y]); xIn.value = ""; yIn.value = "";
                 renderList(); drawPoints(); clearAlert();
             });
+
             document.getElementById("calc").addEventListener("click", calcular);
+
             document.getElementById("edit").addEventListener("click", () => {
                 editMode = !editMode;
                 listBox.readOnly = !editMode;
@@ -485,14 +516,17 @@
                     puntos = parsed; renderList(); drawPoints();
                 }
             });
+
             document.getElementById("delLast").addEventListener("click", () => { puntos.pop(); renderList(); drawPoints(); });
             document.getElementById("delAll").addEventListener("click", () => { puntos = []; renderList(); resetScene(); });
+
             document.getElementById("metodo").addEventListener("change", () => {
-                const pol = metodoSel.value === "polinomial"; gradoIn.disabled = !pol;
+                const pol = (metodoSel.value === "polinomial");
+                gradoIn.disabled = !pol;
             });
 
             // ================== START =======================
-            window.addEventListener("load", () => {
+            window.addEventListener("DOMContentLoaded", () => {
                 initGeoGebra();
                 gradoIn.disabled = (metodoSel.value !== "polinomial");
                 puntos = [[-1, 1], [-2, 0], [4, 5], [3, 2]]; // ejemplo
