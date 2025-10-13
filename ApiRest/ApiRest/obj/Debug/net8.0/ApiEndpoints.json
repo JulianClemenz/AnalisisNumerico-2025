@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "RegresionAPI.Controllers.RegresionLinealController",
+    "Method": "RegresionLineal",
+    "RelativePath": "RegresionLineal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entrada",
+        "Type": "TP3.DatoEntradaLineal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RegresionAPI.Controllers.RegresionPolinomialController",
+    "Method": "RegresionPolinomial",
+    "RelativePath": "RegresionPolinomial",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entrada",
+        "Type": "DatoEntradaPolinomial",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
