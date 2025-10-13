@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj": {}
+    "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj": {}
   },
   "projects": {
-    "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj": {
+    "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj",
+        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj": {
+    "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj",
         "projectName": "ApiREST",
-        "projectPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj",
+        "projectPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\ApiREST.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj"
+              "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\DTO\\DTO.csproj"
               }
             }
           }

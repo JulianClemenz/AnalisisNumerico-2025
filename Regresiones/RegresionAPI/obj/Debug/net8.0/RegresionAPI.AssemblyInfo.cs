@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RegresionAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d575616de46dffc72b871dd94c1a5df63f41c3d6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7405b1f240200d812cb4f8cf66789f8f4cfe286d")]
 [assembly: System.Reflection.AssemblyProductAttribute("RegresionAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RegresionAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

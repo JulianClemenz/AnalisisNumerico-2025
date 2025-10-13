@@ -6,4 +6,4 @@
         public Double Tolerancia { get; set; }//0.8
 
     }
-}
+}   

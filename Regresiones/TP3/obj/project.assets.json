@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\Regresiones\\TP3\\Entity.csproj",
       "projectName": "Entity",
-      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\Entity.csproj",
+      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\Regresiones\\TP3\\Entity.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\TP3\\TP3\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\Regresiones\\TP3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
