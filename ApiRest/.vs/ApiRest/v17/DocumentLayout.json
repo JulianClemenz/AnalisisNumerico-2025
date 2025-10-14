@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 870,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,10 +53,6 @@
               "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "DatoEntradaPolinomial.cs",
@@ -66,8 +62,7 @@
               "RelativeToolTip": "Entity\\DatoEntradaPolinomial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T19:36:54.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T19:36:54.771Z"
             },
             {
               "$type": "Document",
@@ -79,8 +74,7 @@
               "RelativeToolTip": "ApiRest\\Controllers\\RegresionPolinomialController.cs",
               "ViewState": "AgIAAJsAAAAAAAAAAAA7wLEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:58:08.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T01:58:08.085Z"
             },
             {
               "$type": "Document",
@@ -92,8 +86,7 @@
               "RelativeToolTip": "ApiRest\\Controllers\\RegresionLinealController.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAowF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:57:14.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T01:57:14.373Z"
             },
             {
               "$type": "Document",
@@ -103,7 +96,7 @@
               "RelativeDocumentMoniker": "HTMLPage1.html",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\HTMLPage1.html",
               "RelativeToolTip": "HTMLPage1.html",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAiwP8AAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAiwP0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-13T01:55:44.344Z",
               "EditorCaption": ""
@@ -111,6 +104,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "Entity\\DatoSalidaGeneral.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:50:46.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T01:50:46.651Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "Entity\\DatoEntradaLineal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:49:29.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T01:49:29.512Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "ApiRest\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:46:37.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-13T01:46:37.314Z"
             }
           ]
         }
