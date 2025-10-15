@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FB87D2CC-C290-4F17-B416-EDED66387FB7}|ApiRest\\ApiRest.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\apirest\\apirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB87D2CC-C290-4F17-B416-EDED66387FB7}|ApiRest\\ApiRest.csproj|solutionrelative:apirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB87D2CC-C290-4F17-B416-EDED66387FB7}|ApiRest\\ApiRest.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\apirest\\apirest\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB87D2CC-C290-4F17-B416-EDED66387FB7}|ApiRest\\ApiRest.csproj|solutionrelative:apirest\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|html{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|html{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}|solutionrelative:HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6361F0BA-E0CD-4A82-8E78-5D7451FB9703}|Entity\\Entity.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\apirest\\entity\\datoentradalineal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6361F0BA-E0CD-4A82-8E78-5D7451FB9703}|Entity\\Entity.csproj|solutionrelative:entity\\datoentradalineal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB87D2CC-C290-4F17-B416-EDED66387FB7}|ApiRest\\ApiRest.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\apirest\\apirest\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB87D2CC-C290-4F17-B416-EDED66387FB7}|ApiRest\\ApiRest.csproj|solutionrelative:apirest\\controllers\\regresionlinealcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB87D2CC-C290-4F17-B416-EDED66387FB7}|ApiRest\\ApiRest.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\apirest\\apirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB87D2CC-C290-4F17-B416-EDED66387FB7}|ApiRest\\ApiRest.csproj|solutionrelative:apirest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,23 +38,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 870,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HTMLPage1.html",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\HTMLPage1.html",
+              "RelativeDocumentMoniker": "HTMLPage1.html",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\HTMLPage1.html",
+              "RelativeToolTip": "HTMLPage1.html",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAwwAEBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-13T01:55:44.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DatoEntradaPolinomial.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\Entity\\DatoEntradaPolinomial.cs",
               "RelativeDocumentMoniker": "Entity\\DatoEntradaPolinomial.cs",
@@ -66,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "RegresionPolinomialController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\ApiRest\\Controllers\\RegresionPolinomialController.cs",
               "RelativeDocumentMoniker": "ApiRest\\Controllers\\RegresionPolinomialController.cs",
@@ -78,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "RegresionLinealController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\ApiRest\\Controllers\\RegresionLinealController.cs",
               "RelativeDocumentMoniker": "ApiRest\\Controllers\\RegresionLinealController.cs",
@@ -86,19 +99,20 @@
               "RelativeToolTip": "ApiRest\\Controllers\\RegresionLinealController.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAowF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:57:14.373Z"
+              "WhenOpened": "2025-10-13T01:57:14.373Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HTMLPage1.html",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\HTMLPage1.html",
-              "RelativeDocumentMoniker": "HTMLPage1.html",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\HTMLPage1.html",
-              "RelativeToolTip": "HTMLPage1.html",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAiwP0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-13T01:55:44.344Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\ApiRest\\Program.cs",
+              "RelativeDocumentMoniker": "ApiRest\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\ApiRest\\Program.cs",
+              "RelativeToolTip": "ApiRest\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T01:46:37.314Z",
               "EditorCaption": ""
             },
             {
@@ -111,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DatoSalidaGeneral.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\Entity\\DatoSalidaGeneral.cs",
               "RelativeDocumentMoniker": "Entity\\DatoSalidaGeneral.cs",
@@ -123,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DatoEntradaLineal.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\Entity\\DatoEntradaLineal.cs",
               "RelativeDocumentMoniker": "Entity\\DatoEntradaLineal.cs",
@@ -132,18 +146,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-13T01:49:29.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\ApiRest\\Program.cs",
-              "RelativeDocumentMoniker": "ApiRest\\Program.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\ApiRest\\ApiRest\\Program.cs",
-              "RelativeToolTip": "ApiRest\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T01:46:37.314Z"
             }
           ]
         }
