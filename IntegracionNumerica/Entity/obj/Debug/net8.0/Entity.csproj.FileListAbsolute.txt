@@ -1,0 +1,11 @@
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\bin\Debug\net8.0\Entity.deps.json
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\bin\Debug\net8.0\Entity.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\bin\Debug\net8.0\Entity.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\obj\Debug\net8.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\obj\Debug\net8.0\Entity.AssemblyInfoInputs.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\obj\Debug\net8.0\Entity.AssemblyInfo.cs
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\obj\Debug\net8.0\Entity.csproj.CoreCompileInputs.cache
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\obj\Debug\net8.0\Entity.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\obj\Debug\net8.0\refint\Entity.dll
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\obj\Debug\net8.0\Entity.pdb
+C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\Programa1Codigo\IntegracionNumerica\Entity\obj\Debug\net8.0\ref\Entity.dll

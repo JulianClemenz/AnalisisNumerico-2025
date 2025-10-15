@@ -1,0 +1,604 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Integración Numérica — Demo</title>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <style>
+        :root {
+            --bg: #0b1220;
+            --panel: #0f172a;
+            --card: #111a2e;
+            --ring: #1a2b46;
+            --text: #e7eefc;
+            --muted: #9fb3c8;
+            --brand: #38bdf8;
+            --accent: #22c55e;
+            --warn: #f59e0b;
+            --err: #ef4444
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html, body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg,#0a1020 0%,#0b1220 100%);
+            color: var(--text);
+            font-family: Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif
+        }
+
+        .app {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            min-height: 100%
+        }
+
+        aside {
+            background: var(--panel);
+            padding: 20px;
+            border-right: 1px solid #1f2a44
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px
+        }
+
+            .brand .logo {
+                width: 34px;
+                height: 34px;
+                border-radius: 8px;
+                background: radial-gradient(circle at 30% 30%, #3b82f6, #06b6d4);
+                box-shadow: 0 0 0 3px #0b1329
+            }
+
+            .brand h1 {
+                font-size: 16px;
+                margin: 0;
+                letter-spacing: .5px
+            }
+
+        nav {
+            display: grid;
+            gap: 8px
+        }
+
+        .nav-section {
+            margin-top: 14px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--muted);
+            letter-spacing: .1em
+        }
+
+        .nav-btn {
+            background: #0e1a33;
+            color: var(--text);
+            border: 1px solid #1f2a44;
+            padding: 10px 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: left
+        }
+
+            .nav-btn.active, .nav-btn:hover {
+                border-color: #2b3d63;
+                outline: 2px solid #1f2a44
+            }
+
+        main {
+            padding: 24px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 24px
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid #1f2a44;
+            border-radius: 16px;
+            padding: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25)
+        }
+
+            .card h2 {
+                margin: 0 0 12px 0;
+                font-size: 18px
+            }
+
+        .muted {
+            color: var(--muted)
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 12px
+        }
+
+        .field {
+            display: grid;
+            gap: 6px
+        }
+
+        label {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        input, select {
+            background: #0e1730;
+            border: 1px solid #203057;
+            color: var(--text);
+            border-radius: 10px;
+            padding: 10px 12px;
+            outline: none
+        }
+
+            input:focus, select:focus {
+                border-color: #31528a
+            }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 12px
+        }
+
+        .btn {
+            border: 1px solid #27406f;
+            background: #102243;
+            color: var(--text);
+            padding: 10px 14px;
+            border-radius: 10px;
+            cursor: pointer
+        }
+
+            .btn.primary {
+                border-color: #155e75;
+                background: linear-gradient(180deg,#0ea5e9,#0284c7)
+            }
+
+            .btn.success {
+                border-color: #14532d;
+                background: linear-gradient(180deg,#22c55e,#16a34a)
+            }
+
+            .btn:disabled {
+                opacity: .6;
+                cursor: not-allowed
+            }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 10px
+        }
+
+        .stat {
+            background: #0e1a33;
+            border: 1px solid #1f2a44;
+            border-radius: 12px;
+            padding: 12px
+        }
+
+            .stat .k {
+                font-size: 28px;
+                font-weight: 700
+            }
+
+            .stat.ok {
+                border-color: #19402e
+            }
+
+            .stat.warn {
+                border-color: #4b3b18
+            }
+
+            .stat.err {
+                border-color: #4a1d1d
+            }
+
+        .ggb {
+            height: 420px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid #1f2a44
+        }
+
+        .footer-note {
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .hl {
+            color: var(--brand)
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .chip {
+            font-size: 12px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #0e1a33;
+            border: 1px solid #1f2a44
+        }
+
+        @media (max-width:980px) {
+            .app {
+                grid-template-columns: 1fr
+            }
+
+            aside {
+                position: sticky;
+                top: 0;
+                z-index: 10
+            }
+
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <aside>
+            <div class="brand">
+                <div class="logo"></div>
+                <h1>ANÁLISIS NUMÉRICO · 2025</h1>
+            </div>
+            <div class="nav-section">Integración Numérica</div>
+            <nav id="methodNav">
+                <button class="nav-btn active" data-method="trapecio-simple">Trapecio Simple</button>
+                <button class="nav-btn" data-method="trapecio-multiple">Trapecio Múltiple</button>
+                <button class="nav-btn" data-method="simpson-1-3-simple">Simpson 1/3 Simple</button>
+                <button class="nav-btn" data-method="simpson-1-3-multiple">Simpson 1/3 Múltiple</button>
+                <button class="nav-btn" data-method="simpson-3-8">Simpson 3/8</button>
+                <button class="nav-btn" data-method="combinado">1/3 + 3/8 Combinado</button>
+            </nav>
+            <div style="margin-top:18px" class="chips">
+                <div class="chip">x es la variable</div>
+                <div class="chip">Ej: sin(x), ln(x), 1/(x+2)</div>
+                <div class="chip">Unidades en radianes</div>
+            </div>
+        </aside>
+
+        <main>
+            <div class="grid">
+                <section class="card">
+                    <h2 id="title">Trapecio Simple</h2>
+                    <p class="muted" id="subtitle">Aproxima el área con un trapecio único.</p>
+
+                    <div class="row" style="margin-top:8px">
+                        <div class="field">
+                            <label for="funcion">Función f(x)</label>
+                            <input id="funcion" placeholder="Ej: 1/(x+2) + x" value="(1/x)+x" />
+                        </div>
+                        <div class="field">
+                            <label for="xi">Extremo izquierdo (a = Xi)</label>
+                            <input id="xi" inputmode="decimal" step="any" value="0.5" />
+                        </div>
+                        <div class="field">
+                            <label for="xd">Extremo derecho (b = Xd)</label>
+                            <input id="xd" inputmode="decimal" step="any" value="3.5" />
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top:8px">
+                        <div class="field" id="nField" style="display:none">
+                            <label for="n">Cantidad de subintervalos (n)</label>
+                            <input id="n" type="number" min="1" step="1" value="8" />
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button id="btnCalcular" class="btn primary">Calcular</button>
+                        <button id="btnGraficar" class="btn">Graficar</button>
+                        <button id="btnReset" class="btn">Limpiar</button>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat ok">
+                            <div class="muted">Área aproximada (API)</div>
+                            <div id="areaApi" class="k">—</div>
+                        </div>
+                        <div class="stat">
+                            <div class="muted">Área real (GeoGebra)</div>
+                            <div id="areaReal" class="k">—</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-note">
+                        Tip: para <span class="hl">Simpson 1/3 múltiple</span> usá <b>n par</b>. El modo <span class="hl">combinado</span> acepta n impar y aplica 3/8 en los últimos 3 subintervalos.
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 style="display:flex;align-items:center;gap:10px">Vista GeoGebra</h2>
+                    <div id="ggb" class="ggb"></div>
+                    <div class="footer-note">Se grafica f(x) y se sombrea ∫<sub>a</sub><sup>b</sup> f(x) dx como referencia.</div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // ===================== CONFIG =====================
+        const BASE_URL = "https://localhost:7200";
+        const CONTROLLER = "/MetodosIntegrales";
+        const ENDPOINTS = {
+            "trapecio-simple": `${BASE_URL}${CONTROLLER}/trapecio/simple`,
+            "trapecio-multiple": `${BASE_URL}${CONTROLLER}/trapecio/multiple`,
+            "simpson-1-3-simple": `${BASE_URL}${CONTROLLER}/simpson/1-3/simple`,
+            "simpson-1-3-multiple": `${BASE_URL}${CONTROLLER}/simpson/1-3/multiple`,
+            "simpson-3-8": `${BASE_URL}${CONTROLLER}/simpson/3_8`,
+            "combinado": `${BASE_URL}${CONTROLLER}/combinados`,
+        };
+
+        const METHOD_INFO = {
+            "trapecio-simple": { title: "Trapecio Simple", sub: "Aproxima el área con un trapecio único.", needN: false },
+            "trapecio-multiple": { title: "Trapecio Múltiple", sub: "Particiona [a,b] en n subintervalos.", needN: true },
+            "simpson-1-3-simple": { title: "Simpson 1/3 Simple", sub: "Uso de 2 subintervalos (punto medio).", needN: false },
+            "simpson-1-3-multiple": { title: "Simpson 1/3 Múltiple", sub: "n debe ser par. Combina pesos 4 y 2.", needN: true },
+            "simpson-3-8": { title: "Simpson 3/8", sub: "Tres subintervalos con pesos 1-3-3-1.", needN: false },
+            "combinado": { title: "1/3 + 3/8 Combinado", sub: "Si n es impar, usa 3/8 en los últimos 3.", needN: true },
+        };
+
+        // ===================== UI =====================
+        const nav = document.getElementById("methodNav");
+        const title = document.getElementById("title");
+        const subtitle = document.getElementById("subtitle");
+        const areaApi = document.getElementById("areaApi");
+        const areaReal = document.getElementById("areaReal");
+        const nField = document.getElementById("nField");
+        const inputF = document.getElementById("funcion");
+        const inputA = document.getElementById("xi");
+        const inputB = document.getElementById("xd");
+        const inputN = document.getElementById("n");
+        const btnCalc = document.getElementById("btnCalcular");
+        const btnPlot = document.getElementById("btnGraficar");
+        const btnReset = document.getElementById("btnReset");
+
+        let currentMethod = "trapecio-simple";
+
+        nav.addEventListener("click", (e) => {
+            const btn = e.target.closest(".nav-btn");
+            if (!btn) return;
+            [...nav.querySelectorAll(".nav-btn")].forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            currentMethod = btn.dataset.method;
+
+            const info = METHOD_INFO[currentMethod];
+            title.textContent = info.title;
+            setSubtitle(info.sub);
+            nField.style.display = info.needN ? "block" : "none";
+            if (currentMethod === "simpson-3-8") inputN.value = 3;
+
+            areaApi.textContent = "—";
+        });
+
+        // ===================== GEO GEBRA =====================
+        let ggbApplet = null;
+        let ggbReady = false;
+
+        function injectGGB() {
+            const box = document.getElementById("ggb");
+            const w = Math.max(320, box.clientWidth || 800);
+            const h = Math.max(300, box.clientHeight || 420);
+
+            const params = {
+                appName: "graphing",
+                width: w,          // ⚠️ tamaño numérico, no "100%"
+                height: h,         // ⚠️
+                showToolBar: false,
+                showAlgebraInput: false,
+                showMenuBar: false,
+                perspective: "G",
+                enableShiftDragZoom: true,
+                appletOnLoad: function (api) {
+                    ggbApplet = api;
+                    ggbReady = true;
+                    console.log("GeoGebra listo.");
+                }
+            };
+
+            const app = new GGBApplet(params, true);
+            app.inject("ggb");
+        }
+
+        // Inyectar cuando el DOM está listo y recalcular tamaño al redimensionar
+        window.addEventListener("DOMContentLoaded", injectGGB);
+        window.addEventListener("resize", () => {
+            const box = document.getElementById("ggb");
+            if (ggbApplet && box) {
+                ggbApplet.setSize(box.clientWidth, box.clientHeight);
+            }
+        });
+
+        function toGeoExpr(str) { return String(str).replace(/\*\*/g, "^").trim(); }
+
+        function graphInGGB(func, a, b) {
+            if (!ggbReady || !ggbApplet) {
+                setSubtitle("GeoGebra aún no está listo. Probá de nuevo.", "warn");
+                return;
+            }
+            try {
+                ggbApplet.reset();
+                ggbApplet.setGridVisible(true);
+                if (ggbApplet.setAxesVisible) ggbApplet.setAxesVisible(true, true);
+
+                const fExpr = toGeoExpr(func);
+                ggbApplet.evalCommand(`f(x) := ${fExpr}`);
+                ggbApplet.evalCommand(`a := ${a}`);
+                ggbApplet.evalCommand(`b := ${b}`);
+                ggbApplet.evalCommand(`g(x) := 0`);
+
+                ggbApplet.evalCommand(`R := IntegralBetween(f, g, a, b)`);
+                if (ggbApplet.exists("R")) {
+                    ggbApplet.setColor("R", 56, 189, 248);
+                    if (ggbApplet.setFilling) ggbApplet.setFilling("R", 0.25);
+                }
+
+                ggbApplet.evalCommand("A := (a, f(a))");
+                ggbApplet.evalCommand("B := (b, f(b))");
+                ggbApplet.setLabelVisible("A", false);
+                ggbApplet.setLabelVisible("B", false);
+                ggbApplet.evalCommand("SegA := Segment((a,0),(a,f(a)))");
+                ggbApplet.evalCommand("SegB := Segment((b,0),(b,f(b)))");
+                ggbApplet.setColor("SegA", 34, 197, 94);
+                ggbApplet.setColor("SegB", 34, 197, 94);
+
+                ggbApplet.setLabelVisible("f", true);
+                ggbApplet.setColor("f", 56, 189, 248);
+                ggbApplet.setLineThickness("f", 6);
+
+                if (ggbApplet.setCoordSystem) {
+                    const padX = Math.max(1, Math.abs(b - a) * 0.15);
+                    const samples = 25;
+                    let ymin = Infinity, ymax = -Infinity;
+                    for (let i = 0; i <= samples; i++) {
+                        const x = a + (i * (b - a)) / samples;
+                        const y = ggbApplet.getValue(`f(${x})`);
+                        if (isFinite(y)) { ymin = Math.min(ymin, y); ymax = Math.max(ymax, y); }
+                    }
+                    if (!isFinite(ymin) || !isFinite(ymax) || ymin === ymax) { ymin = -5; ymax = 5; }
+                    const padY = Math.max(1, (ymax - ymin) * 0.2);
+                    ggbApplet.setCoordSystem(a - padX, b + padX, ymin - padY, ymax + padY);
+                }
+
+                ggbApplet.evalCommand("I := Integral(f, a, b)");
+                const val = ggbApplet.getValue("I");
+                areaReal.textContent = Number.isFinite(val) ? formatNum(val) : "—";
+            } catch (err) {
+                console.error("GeoGebra error:", err);
+                setSubtitle("Error al graficar en GeoGebra. Revisá la función.", "err");
+                areaReal.textContent = "—";
+            }
+        }
+
+        // ===================== UTILS =====================
+        const norm = (v) => typeof v === "string" ? v.replace(",", ".").trim() : v;
+        const toNum = (v) => {
+            const n = parseFloat(norm(v));
+            return Number.isFinite(n) ? n : NaN;
+        };
+        function setLoading(on) {
+            btnCalc.disabled = on; btnPlot.disabled = on; btnReset.disabled = on;
+            btnCalc.textContent = on ? "Calculando..." : "Calcular";
+        }
+        function formatNum(x) {
+            if (!isFinite(x)) return "—";
+            const ax = Math.abs(x);
+            if (ax >= 10000 || (ax > 0 && ax < 1e-4)) return x.toExponential(6);
+            return x.toLocaleString("es-AR", { maximumFractionDigits: 8 });
+        }
+        function setSubtitle(msg, kind = "muted") {
+            subtitle.textContent = msg;
+            subtitle.style.color = kind === "err" ? "var(--err)" : kind === "warn" ? "var(--warn)" : "var(--muted)";
+        }
+
+        // ===================== FETCH =====================
+        async function calcular() {
+            if (!inputF.value.trim()) inputF.value = "sin(x)";
+            if (!inputA.value.trim()) inputA.value = "0";
+            if (!inputB.value.trim()) inputB.value = "3.1415926535";
+
+            const f = inputF.value.trim();
+            const a = toNum(inputA.value);
+            const b = toNum(inputB.value);
+            let n = parseInt(norm(inputN.value), 10);
+
+            if (!f) return setSubtitle("Ingresá una función.", "err");
+            if (isNaN(a) || isNaN(b)) return setSubtitle("Ingresá límites válidos.", "err");
+            if (a === b) return setSubtitle("a y b no pueden ser iguales.", "err");
+
+            if (currentMethod === "simpson-1-3-multiple" && (isNaN(n) || n <= 0 || n % 2 !== 0))
+                return setSubtitle("Para 1/3 múltiple, n debe ser par y > 0.", "warn");
+
+            if (currentMethod === "simpson-3-8") n = 3;
+            if (METHOD_INFO[currentMethod].needN && (isNaN(n) || n <= 0))
+                return setSubtitle("Ingresá un n válido (> 0).", "warn");
+            if (!METHOD_INFO[currentMethod].needN) n = 0;
+
+            const url = ENDPOINTS[currentMethod];
+            const payload = { funcion: f, Xi: a, Xd: b, CantSubIntervalos: n };
+
+            setLoading(true);
+            try {
+                const res = await fetch(url, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                    body: JSON.stringify(payload),
+                    mode: "cors"
+                });
+
+                let data = null, text = "";
+                const ct = res.headers.get("content-type") || "";
+                if (ct.includes("application/json")) data = await res.json(); else text = await res.text();
+
+                if (!res.ok) {
+                    const msg = (data && (data.error || data.detail)) || text || `HTTP ${res.status}`;
+                    areaApi.textContent = "—";
+                    setSubtitle(msg, "err");
+                    return;
+                }
+
+                const area = (data && typeof data.area !== "undefined") ? data.area : NaN;
+                if (Number.isFinite(area)) {
+                    areaApi.textContent = formatNum(area);
+                    setSubtitle("Área calculada correctamente.");
+                    graphInGGB(f, a, b); // autograficar
+                } else {
+                    areaApi.textContent = "—";
+                    setSubtitle("Respuesta de la API sin campo 'area'.", "warn");
+                }
+            } catch (e) {
+                console.error(e);
+                setSubtitle("No se pudo conectar con la API (ver CORS/URL/puerto).", "err");
+            } finally {
+                setLoading(false);
+            }
+        }
+
+        // ===================== EVENTS =====================
+        btnCalc.addEventListener("click", calcular);
+        btnPlot.addEventListener("click", () => {
+            const f = inputF.value.trim();
+            const a = toNum(inputA.value);
+            const b = toNum(inputB.value);
+            if (!f || isNaN(a) || isNaN(b)) return setSubtitle("Completá función y límites.", "warn");
+            graphInGGB(f, a, b);
+        });
+        btnReset.addEventListener("click", () => {
+            inputF.value = "sin(x)";
+            inputA.value = 0;
+            inputB.value = 3.1415926535;
+            inputN.value = 8;
+            areaApi.textContent = "—";
+            areaReal.textContent = "—";
+            if (ggbApplet) { try { ggbApplet.reset(); } catch { } }
+            setSubtitle(METHOD_INFO[currentMethod].sub);
+        });
+    </script>
+</body>
+</html>

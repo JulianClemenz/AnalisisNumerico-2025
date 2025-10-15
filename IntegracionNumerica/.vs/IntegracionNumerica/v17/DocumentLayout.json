@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\HTML.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:HTML.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\integracionnumerica\\integracionnumerica\\controllers\\integraltrapeciosimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|solutionrelative:integracionnumerica\\controllers\\integraltrapeciosimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD315EE-26E3-4726-889B-F4831C85F627}|Entity\\Entity.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\integracionnumerica\\entity\\datossalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD315EE-26E3-4726-889B-F4831C85F627}|Entity\\Entity.csproj|solutionrelative:entity\\datossalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECD315EE-26E3-4726-889B-F4831C85F627}|Entity\\Entity.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\integracionnumerica\\entity\\datosentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECD315EE-26E3-4726-889B-F4831C85F627}|Entity\\Entity.csproj|solutionrelative:entity\\datosentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\integracionnumerica\\integracionnumerica\\apirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|solutionrelative:integracionnumerica\\apirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|c:\\facultad\\3er a\u00F1o\\2docuatrimestre\\analisisnumerico\\programa1codigo\\integracionnumerica\\integracionnumerica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|solutionrelative:integracionnumerica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 870,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HTML.html",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\HTML.html",
+              "RelativeDocumentMoniker": "HTML.html",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\HTML.html",
+              "RelativeToolTip": "HTML.html",
+              "ViewState": "AgIAADsCAAAAAAAAAAAIwE4CAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-15T18:36:46.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiRest.csproj",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\ApiRest.csproj",
+              "RelativeDocumentMoniker": "IntegracionNumerica\\ApiRest.csproj",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\ApiRest.csproj",
+              "RelativeToolTip": "IntegracionNumerica\\ApiRest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-14T21:29:10.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IntegralTrapecioSimple.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\Controllers\\IntegralTrapecioSimple.cs",
+              "RelativeDocumentMoniker": "IntegracionNumerica\\Controllers\\IntegralTrapecioSimple.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\Controllers\\IntegralTrapecioSimple.cs",
+              "RelativeToolTip": "IntegracionNumerica\\Controllers\\IntegralTrapecioSimple.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T21:29:18.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatosSalida.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\Entity\\DatosSalida.cs",
+              "RelativeDocumentMoniker": "Entity\\DatosSalida.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\Entity\\DatosSalida.cs",
+              "RelativeToolTip": "Entity\\DatosSalida.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T21:26:52.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\Program.cs",
+              "RelativeDocumentMoniker": "IntegracionNumerica\\Program.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\Program.cs",
+              "RelativeToolTip": "IntegracionNumerica\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwB4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T21:18:14.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatosEntrada.cs",
+              "DocumentMoniker": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\Entity\\DatosEntrada.cs",
+              "RelativeDocumentMoniker": "Entity\\DatosEntrada.cs",
+              "ToolTip": "C:\\FACULTAD\\3er A\u00F1o\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\Entity\\DatosEntrada.cs",
+              "RelativeToolTip": "Entity\\DatosEntrada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T21:16:32.886Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
