@@ -101,7 +101,7 @@
             margin-bottom: 6px
         }
 
-        input[type="number"], select, textarea {
+        input[type="number"], input[type="text"], select, textarea {
             width: 100%;
             background: #0a1528;
             color: #dbe8ff;
@@ -233,14 +233,13 @@
             color: #9fb3c8
         }
 
-        #fn {
-            white-space: normal !important; /* Permite saltos de línea */
-            word-break: break-word; /* Corta largas expresiones si es necesario */
-            overflow-wrap: anywhere; /* Permite ajustar ecuaciones largas */
-            max-height: 6rem; /* Evita que crezca demasiado */
-            overflow-y: auto; /* Scroll si es muy larga */
+        #fn, #fnMod {
+            white-space: normal !important;
+            word-break: break-word;
+            overflow-wrap: anywhere;
+            max-height: 6rem;
+            overflow-y: auto;
         }
-
     </style>
 </head>
 <body>
@@ -311,6 +310,23 @@
                         <div>Correlación (r)</div><div id="r">—</div>
                         <div>Efectividad</div><div id="ok">—</div>
                     </div>
+
+                    <hr style="border-color:#0f213b; opacity:.3; margin:10px 0;">
+
+                    <!-- Modificación (solo input + recalcular r) -->
+                    <h3 style="margin:.3rem 0 .4rem 0">Modificación de recta</h3>
+                    <div class="row" style="margin-bottom:8px">
+                        <div style="flex:1 1 260px">
+                            <label for="fnManual">Función (ej: y = 1x - 3)</label>
+                            <input id="fnManual" type="text" placeholder="y = 1x - 3" />
+                        </div>
+                        <button id="btnManual" class="btn" style="flex:0 0 auto; margin-top:28px">Recalcular r</button>
+                    </div>
+                    <div class="kv" id="kvManual" style="display:none">
+                        <div>r nuevo</div><div id="rManual">—</div>
+                        <div>Efectividad</div><div id="okManual">—</div>
+                    </div>
+
                     <div id="chips" class="chips"></div>
                 </div>
                 <div id="ggbContainer"></div>
@@ -321,44 +337,52 @@
     <script>
         (() => {
             // ===== CONFIG API =====
-            const API_SCHEME = 'https'; // 'http' si tu API corre sin TLS
-            const API_PORT = 7037;    // <-- CAMBIÁ ESTE SI USÁS OTRO
+            const API_SCHEME = 'https';        // usa 'http' si tu API corre sin TLS
+            const API_PORT = 7037;           // CAMBIÁ SI USÁS OTRO
             const API_BASE = `${API_SCHEME}://localhost:${API_PORT}`;
-            const ENDPOINTS = { lineal: "/RegresionLineal", polinomial: "/RegresionPolinomial" };
+            const ENDPOINTS = {
+                lineal: "/RegresionLineal",
+                polinomial: "/RegresionPolinomial",
+                recalc: "/RegresionLineal/RecalcularR"
+            };
 
             // ================== GEO GEBRA ===================
-            /** @type {GGBApplet} */
-            let applet;
-            /** @type {any} API de GeoGebra (ggb) */
             let ggb = null;
-
             function initGeoGebra() {
                 const params = {
                     appName: "graphing",
-                    showToolBar: false,
-                    showAlgebraInput: false,
-                    showMenuBar: false,
-                    showResetIcon: true,
-                    enableRightClick: false,
-                    perspective: "G",
-                    borderColor: "#0f213b",
-                    enableShiftDragZoom: true,
-                    appletOnLoad: function (api) {
-                        ggb = api;
-                        resetScene();
-                    }
+                    showToolBar: false, showAlgebraInput: false, showMenuBar: false,
+                    showResetIcon: true, enableRightClick: false, perspective: "G",
+                    borderColor: "#0f213b", enableShiftDragZoom: true,
+                    appletOnLoad: function (api) { ggb = api; resetScene(); }
                 };
-                applet = new GGBApplet(params, true);
-                // Inyectar cuando todo está cargado (incl. deployggb)
+                const applet = new GGBApplet(params, true);
                 window.addEventListener("load", () => applet.inject("ggbContainer"));
             }
-
             function resetScene() {
                 if (!ggb) return;
                 try { ggb.reset(); } catch { }
                 try { ggb.setGridVisible(true); } catch { }
                 try { ggb.setAxesVisible(true, true); } catch { }
                 try { ggb.setCoordSystem(-6, 6, -4, 6); } catch { }
+            }
+
+            // Helpers para graficar varias rectas
+            const toRHS = s => String(s || "")
+                .replace(/^y\s*=\s*/i, '').replace(/\+\s*-/g, '- ').replace(/-\s*-/g, '+ ')
+                .replace(/\s+/g, ' ').replace(/,/g, '.').trim();
+
+            function drawLine(name, funcStr, opt = {}) {
+                if (!ggb || !funcStr) return;
+                const rhs = toRHS(funcStr); if (!rhs) return;
+                try { if (ggb.exists(name)) ggb.deleteObject(name); } catch { }
+                const ok = ggb.evalCommand(`${name}(x):=${rhs}`); if (!ok) return;
+                try {
+                    if (opt.thickness) ggb.setLineThickness(name, opt.thickness);
+                    if (opt.style != null) ggb.setLineStyle(name, opt.style); // 0 sólido, 1 guiones, 2 punteado…
+                    if (opt.color) { const [r, g, b] = opt.color; ggb.setColor(name, r, g, b); }
+                    ggb.setLabelVisible(name, true);
+                } catch { }
             }
 
             // ================== STATE & DOM =================
@@ -371,6 +395,7 @@
             const listBox = $("#list"), chips = $("#chips");
             const fnOut = $("#fn"), rOut = $("#r"), okOut = $("#ok");
             const alertBox = $("#alert");
+            const fnManualIn = document.getElementById('fnManual');
 
             const fmt = n => (Math.abs(n) >= 1e6 || (Math.abs(n) > 0 && Math.abs(n) < 1e-3))
                 ? Number(n).toExponential(2)
@@ -389,17 +414,15 @@
                     el.innerHTML = `P${i}=(${fmt(p[0])},${fmt(p[1])}) <span class="x" title="Quitar">×</span>`;
                     el.querySelector(".x").addEventListener("click", () => {
                         puntos.splice(i, 1);
-                        renderList(); drawPoints();
+                        renderList(); drawPointsOnly();
                     });
                     chips.appendChild(el);
                 });
             }
-
             function parseListBox() {
                 const lines = listBox.value.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
                 const arr = [];
                 for (const line of lines) {
-                    // admite "x,y" | "x y" | "x; y" | "x|y"
                     const m = line.split(/[;,|\s]\s*/).filter(Boolean);
                     if (m.length < 2) continue;
                     const x = Number(m[0].replace(',', '.'));
@@ -409,8 +432,8 @@
                 return arr;
             }
 
-            // ================== GEO: DIBUJO =================
-            function drawPoints() {
+            // Dibujo de puntos (no borra líneas)
+            function drawPointsOnly() {
                 if (!ggb) return;
                 resetScene();
                 puntos.forEach((p, i) => {
@@ -420,32 +443,7 @@
                 });
             }
 
-            function drawFunctionFromBackend(funcionStr) {
-                if (!ggb || !funcionStr) return;
-
-                const rhs = String(funcionStr)
-                    .replace(/^y\s*=\s*/i, '')   // quita "y ="
-                    .replace(/\+\s*-/g, '- ')    // "+ -" -> "-"
-                    .replace(/-\s*-/g, '+ ')     // "- -" -> "+"
-                    .replace(/\s+/g, ' ')        // normaliza espacios
-                    .replace(/,/g, '.')          // coma decimal -> punto (por si viene así)
-                    .trim();
-
-                try { ggb.deleteObject('f'); } catch { }
-
-                if (!rhs) return;
-                const ok = ggb.evalCommand(`f(x):=${rhs}`);
-                if (!ok) {
-                    console.warn('GeoGebra no pudo interpretar la función:', rhs);
-                    return;
-                }
-                try {
-                    ggb.setLabelVisible('f', true);
-                    ggb.setLineThickness('f', 5);
-                } catch { }
-            }
-
-            // ================== API CALLS ===================
+            // ================== API ===================
             async function postJson(url, body) {
                 const res = await fetch(url, {
                     method: "POST",
@@ -466,7 +464,7 @@
                 clearAlert();
                 if (puntos.length < 2) { showErr("Se requieren al menos 2 puntos."); return; }
 
-                const tolerancia = Number(tolIn.value ?? 0); // % (tus controladores devuelven r * 100)
+                const tolerancia = Number(tolIn.value ?? 0);
                 const metodo = metodoSel.value;
 
                 try {
@@ -477,22 +475,83 @@
 
                     const data = await postJson(url, body);
 
-                    // compat: Propiedades con mayúscula/minúscula
                     const fn = data.Funcion ?? data.funcion ?? "—";
                     const pr = data.PorcCorrelacion ?? data.porcCorrelacion;
                     const eff = (data.EfectAjuste ?? data.efectAjuste) === true;
 
+                    const fnMod = data.FuncionModificada ?? data.funcionModificada ?? "";
+                    const prMod = data.PorcCorrelacionModificada ?? data.porcCorrelacionModificada;
+                    const effMod = (data.EfectAjusteModificada ?? data.efectAjusteModificada) === true;
+
+                    // salida normal
                     fnOut.textContent = fn;
                     rOut.textContent = (pr != null) ? `${fmt(pr)} %` : "—";
                     okOut.textContent = eff ? "Aceptable" : "No aceptable";
+
+                    // pre-cargar el input manual con la modificada para editar
+                    if (fnManualIn && fnMod) fnManualIn.value = fnMod;
+
                     showOK("Cálculo realizado correctamente.");
 
-                    drawPoints();                      // primero puntos (hace reset)
-                    if (fn && fn !== "—") drawFunctionFromBackend(fn); // luego curva
+                    // DIBUJAR: puntos + normal + modificada (si hay)
+                    drawPointsOnly();
+                    if (fn && fn !== "—") drawLine('f', fn, { thickness: 5, style: 0, color: [64, 145, 255] });
+                    if (fnMod) drawLine('fMod', fnMod, { thickness: 5, style: 2, color: [34, 197, 94] });
+
+                    // limpiar resultado manual visual hasta que el usuario recalcule
+                    document.getElementById("kvManual").style.display = "none";
 
                 } catch (err) {
                     console.error(err);
                     showErr(`Fallo de red o CORS: ${String(err.message || err)}`);
+                }
+            }
+
+            async function recalcularManual() {
+                clearAlert();
+                if (puntos.length < 2) { showErr("Cargá al menos 2 puntos primero."); return; }
+
+                const fn = String(fnManualIn.value || "").trim();
+                if (!fn) { showErr("Ingresá una función, ej: y = 1x - 3"); return; }
+
+                try {
+                    const data = await postJson(API_BASE + ENDPOINTS.recalc, {
+                        puntosCargados: puntos.map(([x, y]) => [x, y]),
+                        funcion: fn,
+                        tolerancia: Number(tolIn.value ?? 0)
+                    });
+
+                    // mostrar resultado
+                    document.getElementById("kvManual").style.display = "grid";
+
+                    const rMan = (data.PorcCorrelacion ?? data.porcCorrelacion);
+                    document.getElementById("rManual").textContent = (rMan != null) ? `${fmt(rMan)} %` : "—";
+
+                    const okMan = (data.EfectAjuste ?? data.efectAjuste) === true;
+                    document.getElementById("okManual").textContent = okMan ? "Aceptable" : "No aceptable";
+
+                    // re-dibujar todo, agregando la recta manual
+                    drawPointsOnly();
+
+                    const fnLbl = document.getElementById("fn").textContent;   // normal
+                    const fnModLbl = fnManualIn.value && fnManualIn.value !== fn ? fnManualIn.value : null; // no sobreescribir si es igual
+
+                    if (fnLbl && fnLbl !== "—") drawLine('f', fnLbl, { thickness: 5, style: 0, color: [64, 145, 255] });
+
+                    // si tenías la modificada previa (por el cálculo principal), graficarla también:
+                    const maybeBackMod = document.getElementById("fnManual").value;
+                    if (maybeBackMod && maybeBackMod !== fn) {
+                        drawLine('fMod', maybeBackMod, { thickness: 5, style: 2, color: [34, 197, 94] });
+                    }
+
+                    // manual
+                    drawLine('fManual', fn, { thickness: 5, style: 1, color: [217, 70, 239] });
+
+                    showOK("r recalculado sobre la recta manual.");
+
+                } catch (err) {
+                    console.error(err);
+                    showErr(`No se pudo recalcular r: ${String(err.message || err)}`);
                 }
             }
 
@@ -501,10 +560,11 @@
                 const x = Number(xIn.value), y = Number(yIn.value);
                 if (!Number.isFinite(x) || !Number.isFinite(y)) { showErr("Debes ingresar números válidos para X e Y."); return; }
                 puntos.push([x, y]); xIn.value = ""; yIn.value = "";
-                renderList(); drawPoints(); clearAlert();
+                renderList(); drawPointsOnly(); clearAlert();
             });
 
             document.getElementById("calc").addEventListener("click", calcular);
+            document.getElementById("btnManual").addEventListener("click", recalcularManual);
 
             document.getElementById("edit").addEventListener("click", () => {
                 editMode = !editMode;
@@ -513,11 +573,11 @@
                 if (!editMode) {
                     const parsed = parseListBox();
                     if (parsed.length === 0) { showErr("La lista no contiene puntos válidos (formato x,y o x y)."); return; }
-                    puntos = parsed; renderList(); drawPoints();
+                    puntos = parsed; renderList(); drawPointsOnly();
                 }
             });
 
-            document.getElementById("delLast").addEventListener("click", () => { puntos.pop(); renderList(); drawPoints(); });
+            document.getElementById("delLast").addEventListener("click", () => { puntos.pop(); renderList(); drawPointsOnly(); });
             document.getElementById("delAll").addEventListener("click", () => { puntos = []; renderList(); resetScene(); });
 
             document.getElementById("metodo").addEventListener("change", () => {

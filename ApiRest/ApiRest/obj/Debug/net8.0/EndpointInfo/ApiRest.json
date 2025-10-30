@@ -36,6 +36,37 @@
         }
       }
     },
+    "/RegresionLineal/RecalcularR": {
+      "post": {
+        "tags": [
+          "RegresionLineal"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecalcEntrada"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecalcEntrada"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecalcEntrada"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/RegresionPolinomial": {
       "post": {
         "tags": [
@@ -115,6 +146,31 @@
           "grado": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RecalcEntrada": {
+        "type": "object",
+        "properties": {
+          "puntosCargados": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "double"
+              }
+            },
+            "nullable": true
+          },
+          "funcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "tolerancia": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

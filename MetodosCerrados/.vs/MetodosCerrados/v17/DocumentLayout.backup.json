@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\controllers\\secantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\controllers\\secantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\controllers\\metodoscerradoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\controllers\\metodoscerradoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\controllers\\secantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|solutionrelative:metodoscerrados\\controllers\\secantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6A61D72-A70B-4555-9F06-3661B23787E0}|MetodosCerrados\\ApiREST.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\metodoscerrados\\metodoscerrados\\controllers\\newtonraphsoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +66,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Bookmark",
@@ -102,13 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MetodosCerradosController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\MetodosCerradosController.cs",
               "RelativeDocumentMoniker": "MetodosCerrados\\Controllers\\MetodosCerradosController.cs",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\MetodosCerradosController.cs",
               "RelativeToolTip": "MetodosCerrados\\Controllers\\MetodosCerradosController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAkwFUAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-11T23:40:27.755Z"
             },
@@ -120,18 +120,18 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAMUBAAAAAAAAAAAswOABAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAANEBAAAAAAAAAAAswOgBAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-08-11T23:43:39.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SecanteController.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\MetodosCerrados\\MetodosCerrados\\Controllers\\SecanteController.cs",
               "RelativeDocumentMoniker": "MetodosCerrados\\Controllers\\SecanteController.cs",

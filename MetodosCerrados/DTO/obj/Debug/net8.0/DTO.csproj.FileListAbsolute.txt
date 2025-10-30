@@ -33,3 +33,15 @@ C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositori
 C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\refint\DTO.dll
 C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\DTO.pdb
 C:\FACULTAD\3er Año\2doCuatrimestre\AnalisisNumerico\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\ref\DTO.dll
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\bin\Debug\net8.0\DTO.deps.json
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\bin\Debug\net8.0\DTO.dll
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\bin\Debug\net8.0\DTO.pdb
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\DTO.sourcelink.json
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\DTO.dll
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\refint\DTO.dll
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\DTO.pdb
+C:\Users\Usuario\OneDrive\Desktop\AnalisisNumericoRepositorio\MetodosCerrados\DTO\obj\Debug\net8.0\ref\DTO.dll

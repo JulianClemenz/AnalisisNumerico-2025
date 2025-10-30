@@ -2,8 +2,8 @@
 {
     public class DatoEntradaLineal
     {
-        public List<Double[]> puntosCargados { get; set; }//puntos de entrada
-        public Double Tolerancia { get; set; }//0.8
+        public List<double[]> puntosCargados { get; set; }//puntos de entrada
+        public double Tolerancia { get; set; }//0.8
 
     }
 }

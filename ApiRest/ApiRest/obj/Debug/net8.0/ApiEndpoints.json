@@ -16,6 +16,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RegresionAPI.Controllers.RegresionLinealController",
+    "Method": "RecalcularR",
+    "RelativePath": "RegresionLineal/RecalcularR",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entrada",
+        "Type": "RegresionAPI.Controllers.RegresionLinealController\u002BRecalcEntrada",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RegresionAPI.Controllers.RegresionPolinomialController",
     "Method": "RegresionPolinomial",
     "RelativePath": "RegresionPolinomial",

@@ -469,11 +469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\ApiRest.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\IntegracionNumerica\\ApiRest.csproj",
       "projectName": "ApiRest",
-      "projectPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\ApiRest.csproj",
+      "projectPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\IntegracionNumerica\\ApiRest.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\IntegracionNumerica\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\IntegracionNumerica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -494,8 +494,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\Entity\\Entity.csproj": {
-              "projectPath": "C:\\FACULTAD\\3er Año\\2doCuatrimestre\\AnalisisNumerico\\Programa1Codigo\\IntegracionNumerica\\Entity\\Entity.csproj"
+            "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\Entity\\Entity.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\Entity\\Entity.csproj"
             }
           }
         }
