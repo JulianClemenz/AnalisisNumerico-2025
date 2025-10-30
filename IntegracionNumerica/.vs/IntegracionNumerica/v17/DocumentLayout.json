@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\HTML.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:HTML.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\integracionnumerica\\integracionnumerica\\controllers\\integraltrapeciosimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|solutionrelative:integracionnumerica\\controllers\\integraltrapeciosimple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,6 +13,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{ECD315EE-26E3-4726-889B-F4831C85F627}|Entity\\Entity.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\integracionnumerica\\entity\\datosentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECD315EE-26E3-4726-889B-F4831C85F627}|Entity\\Entity.csproj|solutionrelative:entity\\datosentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\HTML.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|Elementos de la soluci\u00F3n{D107F4C8-89CC-BEA8-D3D7-CA6B7733353D}|solutionrelative:HTML.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F317981-7215-4804-AF71-803A9A80834E}|IntegracionNumerica\\ApiRest.csproj|c:\\users\\usuario\\onedrive\\desktop\\analisisnumericorepositorio\\integracionnumerica\\integracionnumerica\\apirest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -34,15 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 870,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Bookmark",
@@ -58,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "HTML.html",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\HTML.html",
               "RelativeDocumentMoniker": "HTML.html",
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\HTML.html",
               "RelativeToolTip": "HTML.html",
-              "ViewState": "AgIAADsCAAAAAAAAAAAIwEkCAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAEIBAAAAAAAAAAAIwEkCAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-15T18:36:46.212Z",
               "EditorCaption": ""
@@ -83,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "IntegralTrapecioSimple.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\IntegracionNumerica\\Controllers\\IntegralTrapecioSimple.cs",
               "RelativeDocumentMoniker": "IntegracionNumerica\\Controllers\\IntegralTrapecioSimple.cs",
@@ -91,11 +87,12 @@
               "RelativeToolTip": "IntegracionNumerica\\Controllers\\IntegralTrapecioSimple.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T21:29:18.461Z"
+              "WhenOpened": "2025-10-14T21:29:18.461Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DatosSalida.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\Entity\\DatosSalida.cs",
               "RelativeDocumentMoniker": "Entity\\DatosSalida.cs",
@@ -103,7 +100,25 @@
               "RelativeToolTip": "Entity\\DatosSalida.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T21:26:52.358Z"
+              "WhenOpened": "2025-10-14T21:26:52.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatosEntrada.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\Entity\\DatosEntrada.cs",
+              "RelativeDocumentMoniker": "Entity\\DatosEntrada.cs",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\Entity\\DatosEntrada.cs",
+              "RelativeToolTip": "Entity\\DatosEntrada.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T21:16:32.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
@@ -116,18 +131,6 @@
               "ViewState": "AgIAAAUAAAAAAAAAAAAmwB4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T21:18:14.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DatosEntrada.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\Entity\\DatosEntrada.cs",
-              "RelativeDocumentMoniker": "Entity\\DatosEntrada.cs",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Desktop\\AnalisisNumericoRepositorio\\IntegracionNumerica\\Entity\\DatosEntrada.cs",
-              "RelativeToolTip": "Entity\\DatosEntrada.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T21:16:32.886Z"
             }
           ]
         }
